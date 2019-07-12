@@ -1,0 +1,22 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'plan.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+Plan _$PlanFromJson(Map<String, dynamic> json) {
+  return Plan()
+    ..name = json['name'] as String
+    ..space = json['space'] as num
+    ..private_repos = json['private_repos'] as num
+    ..collaborators = json['collaborators'] as num;
+}
+
+Map<String, dynamic> _$PlanToJson(Plan instance) => <String, dynamic>{
+      'name': instance.name,
+      'space': instance.space,
+      'private_repos': instance.private_repos,
+      'collaborators': instance.collaborators
+    };

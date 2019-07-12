@@ -1,0 +1,14 @@
+{
+  "name": "Readme.md",
+  "path": "Readme.md",
+  "sha": "f74e929115fc022343312d7a838a4e83728a7b71",
+  "size": 312,
+  "url": "https://api.github.com/repos/Dimillian/MovieSwiftUI/contents/Readme.md?ref=master",
+  "html_url": "https://github.com/Dimillian/MovieSwiftUI/blob/master/Readme.md",
+  "git_url": "https://api.github.com/repos/Dimillian/MovieSwiftUI/git/blobs/f74e929115fc022343312d7a838a4e83728a7b71",
+  "download_url": "https://raw.githubusercontent.com/Dimillian/MovieSwiftUI/master/Readme.md",
+  "type": "file",
+  "content": "IyBNb3ZpZVN3aWZ0VUkKCk1vdmllU3dpZnRVSSBpcyBhbiBhcHBsaWNhdGlv\nbiB1c2luZyB0aGUgTW92aWVEQiBBUEkgYnVpbHQgd2l0aCBTd2lmdFVJLiAK\nSXQgZGVtbyBzb21lIFN3aWZ0VUkgKCYgQ29tYmluZSkgY29uY2VwdHMgYW5k\nIHRoZSBnb2FsIGlzIHRvIG1ha2UgYSByZWFsIHdvcmxkIGFwcGxpY2F0aW9u\nIHVzaW5nIFN3aWZ0VUkgb25seS4gSXQnbGwgYmUgdXBkYXRlZCB3aXRoIGZ1\ndHVyZSBmZWF0dXJlcyBjb21pbmcgdG8gdGhlIFN3aWZ0VUkgZnJhbWV3b3Jr\nLiAKCiFbQXBwIEltYWdlXShpbWFnZXMvTW92aWVTd2lmdFVJLnBuZz8p\n",
+  "encoding": "base64",
+  "@JsonKey(name: '_links') Link": "links"
+}

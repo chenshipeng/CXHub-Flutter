@@ -1,0 +1,39 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'EventModel.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+EventModel _$EventModelFromJson(Map<String, dynamic> json) {
+  return EventModel()
+    ..type = json['type'] as String
+    ..public = json['public'] as bool
+    ..payload = json['payload'] == null
+        ? null
+        : EventPayload.fromJson(json['payload'] as Map<String, dynamic>)
+    ..repo = json['repo'] == null
+        ? null
+        : RepoModel.fromJson(json['repo'] as Map<String, dynamic>)
+    ..actor = json['actor'] == null
+        ? null
+        : ActorModel.fromJson(json['actor'] as Map<String, dynamic>)
+    ..org = json['org'] == null
+        ? null
+        : OrgModel.fromJson(json['org'] as Map<String, dynamic>)
+    ..created_at = json['created_at'] as String
+    ..id = json['id'] as String;
+}
+
+Map<String, dynamic> _$EventModelToJson(EventModel instance) =>
+    <String, dynamic>{
+      'type': instance.type,
+      'public': instance.public,
+      'payload': instance.payload,
+      'repo': instance.repo,
+      'actor': instance.actor,
+      'org': instance.org,
+      'created_at': instance.created_at,
+      'id': instance.id
+    };

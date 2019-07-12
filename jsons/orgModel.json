@@ -1,0 +1,20 @@
+{
+  "login": "PersistX",
+  "id": 29789450,
+  "node_id": "MDEyOk9yZ2FuaXphdGlvbjI5Nzg5NDUw",
+  "avatar_url": "https://avatars0.githubusercontent.com/u/29789450?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/PersistX",
+  "html_url": "https://github.com/PersistX",
+  "followers_url": "https://api.github.com/users/PersistX/followers",
+  "following_url": "https://api.github.com/users/PersistX/following{/other_user}",
+  "gists_url": "https://api.github.com/users/PersistX/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/PersistX/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/PersistX/subscriptions",
+  "organizations_url": "https://api.github.com/users/PersistX/orgs",
+  "repos_url": "https://api.github.com/users/PersistX/repos",
+  "events_url": "https://api.github.com/users/PersistX/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/PersistX/received_events",
+  "type": "Organization",
+  "site_admin": false
+}

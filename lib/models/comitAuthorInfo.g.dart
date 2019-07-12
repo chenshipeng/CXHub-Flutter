@@ -1,0 +1,21 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'comitAuthorInfo.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+ComitAuthorInfo _$ComitAuthorInfoFromJson(Map<String, dynamic> json) {
+  return ComitAuthorInfo()
+    ..name = json['name'] as String
+    ..email = json['email'] as String
+    ..date = json['date'] as String;
+}
+
+Map<String, dynamic> _$ComitAuthorInfoToJson(ComitAuthorInfo instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'email': instance.email,
+      'date': instance.date
+    };

@@ -1,0 +1,23 @@
+{
+  "url": "https://api.github.com/repos/yuan-gao/GYSide/issues/2",
+  "repository_url": "https://api.github.com/repos/yuan-gao/GYSide",
+  "labels_url": "https://api.github.com/repos/yuan-gao/GYSide/issues/2/labels{/name}",
+  "comments_url": "https://api.github.com/repos/yuan-gao/GYSide/issues/2/comments",
+  "events_url": "https://api.github.com/repos/yuan-gao/GYSide/issues/2/events",
+  "html_url": "https://github.com/yuan-gao/GYSide/issues/2",
+  "id": 325191954,
+  "node_id": "MDU6SXNzdWUzMjUxOTE5NTQ=",
+  "number": 2,
+  "title": "发现一个bug",
+  "user": "$userModel",
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-05-22T08:35:33Z",
+  "updated_at": "2018-05-22T08:35:33Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "body": "滑动到侧边栏，假如点击拨打电话，再回来，页面就混乱了，目前只能再拨打电话之前，先取消测滑效果，屏蔽这个bug的出现"
+}
