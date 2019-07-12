@@ -15,8 +15,6 @@ class Commit {
     String comments_url;
     UserModel author;
     UserModel committer;
-    List<Commit> parents;
-    
     factory Commit.fromJson(Map<String,dynamic> json) => _$CommitFromJson(json);
     Map<String, dynamic> toJson() => _$CommitToJson(this);
 }

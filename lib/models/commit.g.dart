@@ -21,11 +21,7 @@ Commit _$CommitFromJson(Map<String, dynamic> json) {
         : UserModel.fromJson(json['author'] as Map<String, dynamic>)
     ..committer = json['committer'] == null
         ? null
-        : UserModel.fromJson(json['committer'] as Map<String, dynamic>)
-    ..parents = (json['parents'] as List)
-        ?.map((e) =>
-            e == null ? null : Commit.fromJson(e as Map<String, dynamic>))
-        ?.toList();
+        : UserModel.fromJson(json['committer'] as Map<String, dynamic>);
 }
 
 Map<String, dynamic> _$CommitToJson(Commit instance) => <String, dynamic>{
@@ -37,5 +33,4 @@ Map<String, dynamic> _$CommitToJson(Commit instance) => <String, dynamic>{
       'comments_url': instance.comments_url,
       'author': instance.author,
       'committer': instance.committer,
-      'parents': instance.parents
     };

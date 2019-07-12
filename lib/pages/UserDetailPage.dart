@@ -16,12 +16,11 @@ class UserDetailPageState extends State<UserDetailPage>{
   final String login;
   UserModel model;
   bool isFollowing = false;
-  List<UserModel>followers;
-  List<UserModel>followings;
+  int page = 1;
   UserDetailPageState(this.login);
 
   getUserInfoWith(String login) async{
-    var response = await NetRequest.getDataWith(Api.usersUrl + "/${login}");
+    var response = await NetRequest.getDataWith(Api.usersUrl + "/${login}",page);
     if(response != null){
       setState(() {
         model = UserModel.fromJson(response);
@@ -40,25 +39,10 @@ class UserDetailPageState extends State<UserDetailPage>{
       }
     });
   }
-
-  getFollows() async{
-    var response = await NetRequest.getDataWith("https://api.github.com/users/${login}/followers");
-    if(response != null){
-      followers = response.map<UserModel>((item) => UserModel.fromJson(item)).toList();
-    }
-  }
-  getFollowing() async{
-    var response = await NetRequest.getDataWith("https://api.github.com/users/${login}/following");
-    if(response != null){
-      followings = response.map<UserModel>((item) => UserModel.fromJson(item)).toList();
-    }
-  }
   @override
   void initState() {
     super.initState();
     getUserInfoWith(login);
-    getFollows();
-    getFollowing();
   }
   @override
   Widget build(BuildContext context) {
@@ -176,18 +160,15 @@ class UserDetailPageState extends State<UserDetailPage>{
   }
   pushWithTopIndex(int index){
     if(index == 0){
-      if(followers != null && followers.length > 0){
-        Navigator.push(context,
-            CupertinoPageRoute(builder:(context){
-              return UserListPage(followers, "Followers");
-            })
-        );
-      }
-
+      Navigator.push(context,
+          CupertinoPageRoute(builder:(context){
+            return UserListPage("https://api.github.com/users/${login}/followers", "Followers");
+          })
+      );
     }else if(index == 1){
       Navigator.push(context,
           CupertinoPageRoute(builder:(context){
-            return UserListPage(followings, "Followings");
+            return UserListPage("https://api.github.com/users/${login}/following", "Followings");
           })
       );
     }

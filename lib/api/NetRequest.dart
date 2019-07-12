@@ -73,7 +73,7 @@ class NetRequest{
   static received_events(String userName,int page) async{
     dio.interceptors.add(new TokenInterceptors());
     Response response;
-    String url = Api.usersUrl + "/${userName}/received_events";
+    String url = Api.usersUrl + "/${userName}/received_events?page=${page}";
     print("url is ${url}");
     try{
       response = await dio.get(url);
@@ -144,12 +144,12 @@ class NetRequest{
       return response.data;
     }
   }
-  static getUserListWith(String url) async{
+  static getUserListWith(String url,int page) async{
     dio.interceptors.add(new TokenInterceptors());
     Response response;
     print("url is ${url}");
     try{
-      response = await dio.get(url);
+      response = await dio.get(url+"?page=${page}");
     }on DioError catch(e){
 //      print("statusCode is ${e.response.statusCode},status message is ${e.response.statusMessage}");
     }
@@ -192,12 +192,12 @@ class NetRequest{
     }
   }
 
-  static getDataWith(String url) async{
-    print("url is ${url}");
+  static getDataWith(String url,int page) async{
 //    dio.interceptors.add(new TokenInterceptors());
     Response response;
     try{
-      response = await dio.get(url);
+      response = await dio.get(url+"?page=${page}");
+      print("url is ${url}");
     }on DioError catch(e){
       print("${url} erros is ${e}");
     }

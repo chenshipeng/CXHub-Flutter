@@ -19,7 +19,6 @@ class Issue {
     UserModel user;
     String state;
     bool locked;
-    String assignee;
     String milestone;
     num comments;
     String created_at;

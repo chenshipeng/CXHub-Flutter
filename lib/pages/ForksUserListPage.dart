@@ -4,31 +4,32 @@ import 'package:flutter/cupertino.dart';
 import 'package:cxhub_flutter/pages/UserDetailPage.dart';
 import 'package:cxhub_flutter/api/NetRequest.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-class UserListPage extends StatefulWidget{
+import 'package:cxhub_flutter/models/repoModel.dart';
+class ForksUserListPage extends StatefulWidget{
   final String title;
   final String url;
-  UserListPage(this.url,this.title,{Key key}):super(key:key);
+  ForksUserListPage(this.url,this.title,{Key key}):super(key:key);
   @override
   State<StatefulWidget> createState() {
-    return UserListState(url,title);
+    return ForksUserListState(url,title);
   }
 }
-class UserListState extends State<UserListPage>{
+class ForksUserListState extends State<ForksUserListPage>{
   final String title;
   final String url;
-  List<UserModel>users;
+  List<RepoModel>users;
   int page = 1;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
-  UserListState(this.url,this.title);
+  ForksUserListState(this.url,this.title);
   void getDataWithPage(int page) async{
     var res = await NetRequest.getUserListWith(url,page);
     if(res != null && res.length > 0){
       _refreshController.refreshCompleted();
       setState(() {
         if(page == 1){
-          users = res.map<UserModel>((item) => UserModel.fromJson(item)).toList();
+          users = res.map<RepoModel>((item) => RepoModel.fromJson(item)).toList();
         }else{
-          users.addAll(res.map<UserModel>((item) => UserModel.fromJson(item)).toList());
+          users.addAll(res.map<RepoModel>((item) => RepoModel.fromJson(item)).toList());
         }
       });
     }
@@ -72,9 +73,9 @@ class UserListState extends State<UserListPage>{
   buildListView(){
     List<Widget>allWidgets = [];
     for(int i=0;i<users.length;i++){
-      UserModel model = users[i];
+      RepoModel model = users[i];
 //      print("model detail is ${model.avatar_url},login is ${model.login}");
-      allWidgets.add(buildListItem(model.avatar_url ??"",model.login??"",i));
+      allWidgets.add(buildListItem(model.owner.avatar_url ??"",model.owner.login??"",i));
       allWidgets.add(getDivider());
     }
     return allWidgets;
@@ -82,7 +83,7 @@ class UserListState extends State<UserListPage>{
   pushWithIndex(int index){
     Navigator.push(context,
         CupertinoPageRoute(builder:(context){
-          return UserDetailPage(users[index].login);
+          return UserDetailPage(users[index].owner.login);
         })
     );
   }
@@ -101,9 +102,9 @@ class UserListState extends State<UserListPage>{
             padding: EdgeInsets.only(right: 10),
             child: ClipOval(
                 child: Image.network(
-                        iconImgName,
-                        width: 30.0,
-                        height: 30.0)
+                    iconImgName,
+                    width: 30.0,
+                    height: 30.0)
             ),
           ),
           Expanded(child: Text(title,style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),)),
@@ -113,7 +114,7 @@ class UserListState extends State<UserListPage>{
       onPressed: (){
         Navigator.push(context,
             CupertinoPageRoute(builder:(context){
-              return UserDetailPage(users[index].login);
+              return UserDetailPage(users[index].owner.login);
             })
         );
       },

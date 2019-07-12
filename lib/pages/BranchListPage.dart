@@ -17,9 +17,10 @@ class BranchListPage extends StatefulWidget{
 class BranchListPageState extends State<BranchListPage>{
   final RepoModel repo;
   List<Branch>branches;
+  int page = 1;
   BranchListPageState(this.repo);
   getBranchList() async{
-    var res = await NetRequest.getDataWith(Api.reposUrl + "/${repo.owner.login}/${repo.name}/branches");
+    var res = await NetRequest.getDataWith(Api.reposUrl + "/${repo.owner.login}/${repo.name}/branches",page);
     if(res != null){
       setState(() {
         if(res != null && res.length > 0){

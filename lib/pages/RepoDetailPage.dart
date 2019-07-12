@@ -11,6 +11,7 @@ import 'package:cxhub_flutter/models/readme.dart';
 import 'package:cxhub_flutter/api/Api.dart';
 import 'package:cxhub_flutter/pages/WebPage.dart';
 import 'package:cxhub_flutter/pages/BranchListPage.dart';
+import 'ForksUserListPage.dart';
 class RepoDetailPage extends StatefulWidget{
 
   final String repoUrl;
@@ -31,6 +32,7 @@ class RepoDetailState extends State<RepoDetailPage>{
   List<UserModel>watchers;
   bool stared = false;
   Readme readme;
+  int page = 1;
   RepoDetailState(this.repoUrl,this.fullName);
 
   getData() async{
@@ -41,14 +43,12 @@ class RepoDetailState extends State<RepoDetailPage>{
         repo = RepoModel.fromJson(res);
       });
       await checkIfStarredRepo();
-      await getAllForTheRepo();
       await getReadme();
-
     }
 //    print(res);
   }
   getReadme() async{
-    var res = await NetRequest.getDataWith(Api.reposUrl + "/${repo.owner.login}/${repo.name}/readme");
+    var res = await NetRequest.getDataWith(Api.reposUrl + "/${repo.owner.login}/${repo.name}/readme",page);
     if(res != null){
       setState(() {
         readme = Readme.fromJson(res);
@@ -77,26 +77,6 @@ class RepoDetailState extends State<RepoDetailPage>{
       }
     });
   }
-  getAllForTheRepo() async{
-    var res = await NetRequest.getUserListWith(repo.stargazers_url);
-    if(res != null && res.length > 0){
-      stargazers = res.map<UserModel>((item) => UserModel.fromJson(item)).toList();
-    }
-//    print(res);
-    var res1 = await NetRequest.getUserListWith(repo.forks_url);
-    if(res1 != null && res1.length > 0){
-      var forkRepos = res1.map<RepoModel>((item) => RepoModel.fromJson(item)).toList();
-      forkRepos.forEach((item){
-        forkers.add(item.owner);
-      });
-    }
-//    print(res1);
-    var res2 = await NetRequest.getUserListWith(repo.subscribers_url);
-    if(res2 != null && res2.length > 0){
-      watchers = res2.map<UserModel>((item) => UserModel.fromJson(item)).toList();
-    }
-//    print(res2);
-  }
   @override
   void initState() {
     super.initState();
@@ -108,19 +88,19 @@ class RepoDetailState extends State<RepoDetailPage>{
     if(index == 0){
       Navigator.push(context,
           CupertinoPageRoute(builder:(context){
-            return UserListPage(stargazers, "Stargazers");
+            return UserListPage(repo.stargazers_url, "Stargazers");
           })
       );
     }else if(index == 1){
       Navigator.push(context,
           CupertinoPageRoute(builder:(context){
-            return UserListPage(forkers, "Forkers");
+            return ForksUserListPage(repo.forks_url, "Forkers");
           })
       );
     }else if(index == 2){
       Navigator.push(context,
           CupertinoPageRoute(builder:(context){
-            return UserListPage(watchers, "Watchers");
+            return UserListPage(repo.subscribers_url, "Watchers");
           })
       );
     }

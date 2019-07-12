@@ -5,6 +5,7 @@ import 'package:cxhub_flutter/models/EventModel.dart';
 import 'package:cxhub_flutter/api/NetRequest.dart';
 import 'package:cxhub_flutter/util/CommonUtils.dart';
 import 'package:cxhub_flutter/pages/RepoDetailPage.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
 class RepoEventsListPage extends StatefulWidget{
   final RepoModel repoModel;
   RepoEventsListPage(this.repoModel,{Key key}):super(key:key);
@@ -17,16 +18,21 @@ class RepoEventsListPageState extends State<RepoEventsListPage>{
   final RepoModel repo;
   List<EventModel>eventList;
   RepoEventsListPageState(this.repo);
+  int page = 1;
+  RefreshController _refreshController = RefreshController(initialRefresh: false);
 
-
-  initParams() async{
-    var res = await NetRequest.getDataWith(repo.events_url);
+  getDataWithPage(int page) async{
+    var res = await NetRequest.getDataWith(repo.events_url,page);
     if(res != null){
       print("response is ${res}");
       var data = res;
       if(data != null && data.length > 0){
         setState(() {
-          eventList = data.map<EventModel>((item) => EventModel.fromJson(item)).toList();
+          if(page == 1){
+            eventList = data.map<EventModel>((item) => EventModel.fromJson(item)).toList();
+          }else{
+            eventList.addAll(data.map<EventModel>((item) => EventModel.fromJson(item)).toList());
+          }
           print(eventList);
         });
       }
@@ -35,7 +41,16 @@ class RepoEventsListPageState extends State<RepoEventsListPage>{
   @override
   void initState() {
     super.initState();
-    initParams();
+    getDataWithPage(page);
+  }
+  void _onRefresh() async{
+    page = 1;
+    getDataWithPage(page);
+  }
+  void _onLoading() async{
+    page = page + 1;
+    getDataWithPage(page);
+
   }
   @override
   Widget build(BuildContext context) {
@@ -45,19 +60,27 @@ class RepoEventsListPageState extends State<RepoEventsListPage>{
         CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(Colors.black),)),);
     }
     return Scaffold(appBar: AppBar(title: Text("Events"),),
-        body: ListView.builder(
-          itemBuilder: (BuildContext context,int index) {
-            EventModel model = eventList[index];
+        body: SmartRefresher(
+          controller: _refreshController,
+          enablePullDown: true,
+          enablePullUp: true,
+          header: WaterDropMaterialHeader(),
+          onRefresh: _onRefresh,
+          onLoading: _onLoading,
+          child: ListView.builder(
+            itemBuilder: (BuildContext context,int index) {
+              EventModel model = eventList[index];
 //          print(model.toString());
-            return Container(
-              color: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.only(left:10.0,right: 10.0),
-                child: _getItem(index,model),
-              ),
-            );
-          },
-          itemCount: eventList.length,
+              return Container(
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.only(left:10.0,right: 10.0),
+                  child: _getItem(index,model),
+                ),
+              );
+            },
+            itemCount: eventList.length,
+          ),
         )
     );
   }

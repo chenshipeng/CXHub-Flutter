@@ -3,6 +3,7 @@ import 'package:cxhub_flutter/models/branch.dart';
 import 'package:cxhub_flutter/models/commit.dart';
 import 'package:cxhub_flutter/api/Api.dart';
 import 'package:cxhub_flutter/api/NetRequest.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
 class CommitListPage extends StatefulWidget{
   final Branch branch;
   CommitListPage(this.branch,{Key key}):super(key:key);
@@ -14,16 +15,22 @@ class CommitListPage extends StatefulWidget{
 }
 class CommitListPageState extends State<CommitListPage>{
   final Branch branch;
-  List<Commit>commits;
+  Commit commit;
+  int page = 1;
   CommitListPageState(this.branch);
+  RefreshController _refreshController = RefreshController(initialRefresh: false);
 
-  getAllCommits() async{
+  getDataWithPage(int page) async{
     print(branch.commit.url);
-    var res = await NetRequest.getDataWith(branch.commit.url);
+    var res = await NetRequest.getDataWith(branch.commit.url,page);
     if(res != null){
       setState(() {
         if(res != null && res.length > 0){
-          commits = res.map<Commit>((item) => Commit.fromJson(item)).toList();
+          if(page == 1){
+            commit = Commit.fromJson(res);
+          }else{
+//            commit.addAll(res.map<Commit>((item) => Commit.fromJson(item)).toList());
+          }
         }
       });
 
@@ -32,11 +39,20 @@ class CommitListPageState extends State<CommitListPage>{
   @override
   void initState() {
     super.initState();
-    getAllCommits();
+    getDataWithPage(page);
+  }
+  void _onRefresh() async{
+    page = 1;
+    getDataWithPage(page);
+  }
+  void _onLoading() async{
+    page = page + 1;
+    getDataWithPage(page);
+
   }
   @override
   Widget build(BuildContext context) {
-    if(commits == null){
+    if(commit == null){
       return Scaffold(appBar:
       AppBar(
         title: Text(branch.name),

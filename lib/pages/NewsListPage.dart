@@ -8,6 +8,7 @@ import 'dart:convert';
 import 'package:cxhub_flutter/util/CommonUtils.dart';
 import 'RepoDetailPage.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
 class NewsListPage extends StatefulWidget{
 
   @override
@@ -19,18 +20,24 @@ class NewsListPage extends StatefulWidget{
 class _NewsListPageState extends State<NewsListPage>{
   String _userName = '';
   List<EventModel>list;
-
-  initParams() async{
+  RefreshController _refreshController = RefreshController(initialRefresh: false);
+  int page = 1;
+  getDataWithPage(int page) async{
     _userName =   await LocalStorage.get(DataUtils.USER_LOGIN);
     print("user name is ${_userName}");
-    var res = await NetRequest.received_events(_userName, 1);
+    var res = await NetRequest.received_events(_userName, page);
     print("res is ${res}");
 
     if(res != null){
+      _refreshController.refreshCompleted();
       var data = res;
       if(data != null && data.length > 0){
         setState(() {
-          list = data.map<EventModel>((item) => EventModel.fromJson(item)).toList();
+          if(page == 1){
+            list = data.map<EventModel>((item) => EventModel.fromJson(item)).toList();
+          }else{
+            list.addAll(data.map<EventModel>((item) => EventModel.fromJson(item)).toList());
+          }
           print("list length is ${list.length}");
         });
       }
@@ -40,7 +47,17 @@ class _NewsListPageState extends State<NewsListPage>{
   @override
   void initState() {
     super.initState();
-    initParams();
+    page = 1;
+    getDataWithPage(page);
+  }
+  void _onRefresh() async{
+    page = 1;
+    getDataWithPage(page);
+  }
+  void _onLoading() async{
+    page = page + 1;
+    getDataWithPage(page);
+
   }
   @override
   Widget build(BuildContext context) {
@@ -48,10 +65,16 @@ class _NewsListPageState extends State<NewsListPage>{
       return Center(child:
       CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(Colors.black),));
     }
-    return ListView.builder(
+    return SmartRefresher(
+      controller: _refreshController,
+      enablePullDown: true,
+      enablePullUp: true,
+      header: WaterDropMaterialHeader(),
+      onRefresh: _onRefresh,
+      onLoading: _onLoading,
+      child: ListView.builder(
         itemBuilder: (BuildContext context,int index) {
           EventModel model = list[index];
-//          print(model.toString());
           return Container(
             color: Colors.white,
             child: Padding(
@@ -60,7 +83,8 @@ class _NewsListPageState extends State<NewsListPage>{
             ),
           );
         },
-      itemCount: list.length,
+        itemCount: list.length,
+      ),
     );
 
   }
