@@ -4,35 +4,41 @@ import 'package:cxhub_flutter/models/commit.dart';
 import 'package:cxhub_flutter/api/Api.dart';
 import 'package:cxhub_flutter/api/NetRequest.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
+import 'package:cxhub_flutter/models/repoModel.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:cxhub_flutter/util/CommonUtils.dart';
 class CommitListPage extends StatefulWidget{
   final Branch branch;
-  CommitListPage(this.branch,{Key key}):super(key:key);
+  final RepoModel repo;
+  CommitListPage(this.branch,this.repo,{Key key}):super(key:key);
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return CommitListPageState(branch);
+    return CommitListPageState(branch,repo);
   }
 }
 class CommitListPageState extends State<CommitListPage>{
   final Branch branch;
-  Commit commit;
+  final RepoModel repo;
+  List<Commit> commits;
   int page = 1;
-  CommitListPageState(this.branch);
+  CommitListPageState(this.branch,this.repo);
   RefreshController _refreshController = RefreshController(initialRefresh: false);
 
   getDataWithPage(int page) async{
-    print(branch.commit.url);
-    var res = await NetRequest.getDataWith(branch.commit.url,page);
+    print("branch url is ${branch.commit.url}");
+    var res = await NetRequest.getDataWith(Api.reposUrl + "/${repo.owner.login}/${repo.name}/commits?sha=${branch.commit.sha}",page);
     if(res != null){
-      setState(() {
-        if(res != null && res.length > 0){
+      if(res != null && res.length > 0){
+        setState(() {
           if(page == 1){
-            commit = Commit.fromJson(res);
+            commits = res.map<Commit>((item) => Commit.fromJson(item)).toList();
           }else{
-//            commit.addAll(res.map<Commit>((item) => Commit.fromJson(item)).toList());
+            commits.addAll(res.map<Commit>((item) => Commit.fromJson(item)).toList());
           }
-        }
-      });
+        });
+      }
+
 
     }
   }
@@ -52,7 +58,7 @@ class CommitListPageState extends State<CommitListPage>{
   }
   @override
   Widget build(BuildContext context) {
-    if(commit == null){
+    if(commits == null){
       return Scaffold(appBar:
       AppBar(
         title: Text(branch.name),
@@ -64,40 +70,62 @@ class CommitListPageState extends State<CommitListPage>{
     }
     return Scaffold(
       appBar: AppBar(title: Text(branch.name),),
-      body: Center(child: Text(branch.name),),
-//      body: ListView(children: buildListView(),),
+      body: ListView(children: buildListView(),),
     );
   }
-//  buildListView(){
-//    List<Widget>allWidgets = [];
-//    for(int i=0;i<branches.length;i++){
-//      Branch model = branches[i];
-//      allWidgets.add(buildListItem(model.name ??"",i));
-//      allWidgets.add(getDivider());
-//    }
-//    return allWidgets;
-//  }
-//  Widget getDivider(){
-//    return Padding(
-//      padding: EdgeInsets.only(left: 15),
-//      child: Divider(color: Colors.grey,),
-//    );
-//  }
-//  Widget buildListItem(String title,index){
-//    return FlatButton(
-//      child: Row(
-//        children: <Widget>[
-//          Expanded(child: Text(title,style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),)),
-//          Icon(Icons.arrow_forward_ios,color: Colors.grey,),
-//        ],
-//      ),
-//      onPressed: (){
-//        Navigator.push(context,
-//            CupertinoPageRoute(builder:(context){
-//              return CommitListPage(branches[index]);
-//            })
-//        );
-//      },
-//    );
-//  }
+  buildListView(){
+    List<Widget>allWidgets = [];
+    for(int i=0;i<commits.length;i++){
+      Commit model = commits[i];
+      allWidgets.add(buildListItem(model,i));
+      allWidgets.add(getDivider());
+    }
+    return allWidgets;
+  }
+  Widget getDivider(){
+    return Padding(
+      padding: EdgeInsets.only(left: 15),
+      child: Divider(color: Colors.grey,),
+    );
+  }
+  Widget buildListItem(Commit commit,index){
+    print("date is ${commit.commit.author.date}");
+    var createTime = "";
+    if(commit.commit.author.date != null){
+      createTime = CommonUtils.getNewsTimeStr(DateTime.parse(commit.commit.author.date));
+    }
+
+    return Container(
+      padding: EdgeInsets.all(10),
+      child: Row(
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(left: 10,right: 10),
+            child: ClipOval(
+              child: Image.network(commit.author.avatar_url,width: 60,height: 60,),
+            ),
+          ),
+          Expanded(
+              child:
+              Column(
+                children: <Widget>[
+                  Text(commit.commit.author.name??"",
+                    style: TextStyle(color: Colors.black,fontSize: 14),),
+                  Text(createTime,
+                      style: TextStyle(color: Colors.black,fontSize: 14)),
+                  Padding(padding: EdgeInsets.only(top: 5,right: 15,bottom: 5),
+                    child: Text(commit.commit.message??"",
+                        overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.left,),
+                  )
+                ],
+                crossAxisAlignment: CrossAxisAlignment.start,
+              )
+          ),
+        ],
+        mainAxisSize: MainAxisSize.min,
+      ),
+
+    );
+  }
 }

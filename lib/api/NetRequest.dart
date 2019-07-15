@@ -193,13 +193,20 @@ class NetRequest{
   }
 
   static getDataWith(String url,int page) async{
-//    dio.interceptors.add(new TokenInterceptors());
+    dio.interceptors.add(new TokenInterceptors());
+    print("url is ${url}");
+    String finalUrl = url;
+    if(!finalUrl.contains("?")){
+      finalUrl = url+"?page=${page}";
+    }else{
+      finalUrl = url +"&page=${page}";
+    }
     Response response;
     try{
-      response = await dio.get(url+"?page=${page}");
-      print("url is ${url}");
+      response = await dio.get(finalUrl);
+      print("url is ${finalUrl}");
     }on DioError catch(e){
-      print("${url} erros is ${e}");
+      print("${finalUrl} erros is ${e}");
     }
     if(response != null && response.data != null){
       return response.data;

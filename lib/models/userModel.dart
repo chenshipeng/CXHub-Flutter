@@ -37,6 +37,7 @@ class UserModel {
     num following;
     String created_at;
     String updated_at;
+    String date;
     num private_gists;
     num total_private_repos;
     num owned_private_repos;

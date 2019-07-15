@@ -78,7 +78,7 @@ class BranchListPageState extends State<BranchListPage>{
       onPressed: (){
         Navigator.push(context,
             CupertinoPageRoute(builder:(context){
-              return CommitListPage(branches[index]);
+              return CommitListPage(branches[index],repo);
             })
         );
       },

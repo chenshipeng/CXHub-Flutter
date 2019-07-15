@@ -36,5 +36,6 @@
   "disk_usage": 10000,
   "collaborators": 8,
   "two_factor_authentication": true,
-  "plan": "$plan"
+  "plan": "$plan",
+  "date": "2011-09-06T17:26:27Z",
 }
