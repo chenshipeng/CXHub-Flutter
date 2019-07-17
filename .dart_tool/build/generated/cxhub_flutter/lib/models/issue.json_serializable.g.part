@@ -19,7 +19,6 @@ Issue _$IssueFromJson(Map<String, dynamic> json) {
         : UserModel.fromJson(json['user'] as Map<String, dynamic>)
     ..state = json['state'] as String
     ..locked = json['locked'] as bool
-    ..assignee = json['assignee'] as String
     ..milestone = json['milestone'] as String
     ..comments = json['comments'] as num
     ..created_at = json['created_at'] as String
@@ -43,7 +42,6 @@ Map<String, dynamic> _$IssueToJson(Issue instance) => <String, dynamic>{
       'user': instance.user,
       'state': instance.state,
       'locked': instance.locked,
-      'assignee': instance.assignee,
       'milestone': instance.milestone,
       'comments': instance.comments,
       'created_at': instance.created_at,

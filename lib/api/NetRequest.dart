@@ -193,7 +193,7 @@ class NetRequest{
   }
 
   static getDataWith(String url,int page) async{
-    dio.interceptors.add(new TokenInterceptors());
+//    dio.interceptors.add(new TokenInterceptors());
     print("url is ${url}");
     String finalUrl = url;
     if(!finalUrl.contains("?")){

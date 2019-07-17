@@ -62,10 +62,12 @@ class _NewsListPageState extends State<NewsListPage>{
   @override
   Widget build(BuildContext context) {
     if(list == null){
-      return Center(child:
-      CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(Colors.black),));
+      return Scaffold(appBar: AppBar(title: Text("News"),centerTitle: true,),
+      body: Center(child:
+      CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(Colors.black),)),);
     }
-    return SmartRefresher(
+    return Scaffold(appBar: AppBar(title: Text("News"),centerTitle: true,),
+    body:SmartRefresher(
       controller: _refreshController,
       enablePullDown: true,
       enablePullUp: true,
@@ -85,8 +87,7 @@ class _NewsListPageState extends State<NewsListPage>{
         },
         itemCount: list.length,
       ),
-    );
-
+    ));
   }
   Widget _getItem(int index,EventModel model){
 

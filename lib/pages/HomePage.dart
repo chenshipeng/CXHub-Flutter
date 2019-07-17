@@ -72,10 +72,6 @@ class HomePageState extends State<HomePage>{
   Widget build(BuildContext context) {
     _body = IndexedStack(children: pages,index: _tabIndex);
     return Scaffold(
-      appBar: AppBar(
-        title: Text(appBarTitles[_tabIndex],style: TextStyle(color: Colors.white),),
-        iconTheme: IconThemeData(color: Colors.white),
-      ),
       body: _body,
       bottomNavigationBar: CupertinoTabBar(items:<BottomNavigationBarItem>[
         BottomNavigationBarItem(

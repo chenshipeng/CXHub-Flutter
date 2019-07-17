@@ -1,0 +1,13 @@
+{
+  "author": "taosdata",
+  "name": "TDengine",
+  "avatar": "https://github.com/taosdata.png",
+  "url": "https://github.com/taosdata/TDengine",
+  "description": "An open-source big data platform designed and optimized for the Internet of Things (IoT).",
+  "language": "C",
+  "languageColor": "#555555",
+  "stars": 4472,
+  "forks": 1100,
+  "currentPeriodStars": 796,
+  "builtBy": "$[]builtBy"
+}

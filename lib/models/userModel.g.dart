@@ -38,7 +38,6 @@ UserModel _$UserModelFromJson(Map<String, dynamic> json) {
     ..followers = json['followers'] as num
     ..following = json['following'] as num
     ..created_at = json['created_at'] as String
-    ..date = json['date'] as String
     ..updated_at = json['updated_at'] as String
     ..private_gists = json['private_gists'] as num
     ..total_private_repos = json['total_private_repos'] as num
@@ -48,7 +47,8 @@ UserModel _$UserModelFromJson(Map<String, dynamic> json) {
     ..two_factor_authentication = json['two_factor_authentication'] as bool
     ..plan = json['plan'] == null
         ? null
-        : Plan.fromJson(json['plan'] as Map<String, dynamic>);
+        : Plan.fromJson(json['plan'] as Map<String, dynamic>)
+    ..date = json['date'] as String;
 }
 
 Map<String, dynamic> _$UserModelToJson(UserModel instance) => <String, dynamic>{
@@ -83,12 +83,12 @@ Map<String, dynamic> _$UserModelToJson(UserModel instance) => <String, dynamic>{
       'following': instance.following,
       'created_at': instance.created_at,
       'updated_at': instance.updated_at,
-      'date': instance.date,
       'private_gists': instance.private_gists,
       'total_private_repos': instance.total_private_repos,
       'owned_private_repos': instance.owned_private_repos,
       'disk_usage': instance.disk_usage,
       'collaborators': instance.collaborators,
       'two_factor_authentication': instance.two_factor_authentication,
-      'plan': instance.plan
+      'plan': instance.plan,
+      'date': instance.date
     };

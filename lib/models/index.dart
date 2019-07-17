@@ -13,6 +13,8 @@ export 'commit.dart' ;
 export 'readme.dart' ; 
 export 'login.dart' ; 
 export 'eventPayload.dart' ; 
+export 'builtBy.dart' ; 
+export 'trending.dart' ; 
 export 'license.dart' ; 
 export 'verification.dart' ; 
 export 'link.dart' ; 

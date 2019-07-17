@@ -32,5 +32,5 @@ Map<String, dynamic> _$CommitToJson(Commit instance) => <String, dynamic>{
       'html_url': instance.html_url,
       'comments_url': instance.comments_url,
       'author': instance.author,
-      'committer': instance.committer,
+      'committer': instance.committer
     };

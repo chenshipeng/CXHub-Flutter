@@ -37,7 +37,6 @@ class UserModel {
     num following;
     String created_at;
     String updated_at;
-    String date;
     num private_gists;
     num total_private_repos;
     num owned_private_repos;
@@ -45,6 +44,7 @@ class UserModel {
     num collaborators;
     bool two_factor_authentication;
     Plan plan;
+    String date;
     
     factory UserModel.fromJson(Map<String,dynamic> json) => _$UserModelFromJson(json);
     Map<String, dynamic> toJson() => _$UserModelToJson(this);
