@@ -19,7 +19,9 @@ Readme _$ReadmeFromJson(Map<String, dynamic> json) {
     ..type = json['type'] as String
     ..content = json['content'] as String
     ..encoding = json['encoding'] as String
-    ..links = json['_links'];
+    ..links = json['_links'] == null
+        ? null
+        : Link.fromJson(json['_links'] as Map<String, dynamic>);
 }
 
 Map<String, dynamic> _$ReadmeToJson(Readme instance) => <String, dynamic>{

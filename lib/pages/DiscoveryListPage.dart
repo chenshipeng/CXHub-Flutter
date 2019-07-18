@@ -4,6 +4,8 @@ import 'package:cxhub_flutter/api/Api.dart';
 import 'package:cxhub_flutter/models/trending.dart';
 import 'package:cxhub_flutter/models/builtBy.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
+import 'RepoDetailPage.dart';
+import 'package:flutter/cupertino.dart';
 class DiscoveryPage extends StatefulWidget{
 
   @override
@@ -16,7 +18,7 @@ class DiscoveryPageState extends State<DiscoveryPage> with SingleTickerProviderS
   TabController _tabController;
   int currentIndex = 0;
   String language = "";
-  List<String>languages = ["all languages","javascript","java","php","ruby","python","css","cpp","c","objective-c","swift","shell","r","perl","lua","html","scala","go"];
+  List<String>languages = ["all languages","javascript","java","php","ruby","python","css","cpp","c","objective-c","swift","dart","shell","r","perl","lua","html","scala","go"];
   List<Trending>dailyTrendings;
   List<Trending>weekTrendings;
   List<Trending>monthTrendings;
@@ -24,7 +26,7 @@ class DiscoveryPageState extends State<DiscoveryPage> with SingleTickerProviderS
 
   getDataWithPage(int page) async{
     String url = "";
-    if(language.length > 0){
+    if(language.length > 0 && language != "all languages"){
       url = "https://github-trending-api.now.sh/repositories?" + "language=${language}?since=${tabs[currentIndex].text}";
     }else{
       url = "https://github-trending-api.now.sh/repositories?" + "since=${tabs[currentIndex].text}";
@@ -94,6 +96,9 @@ class DiscoveryPageState extends State<DiscoveryPage> with SingleTickerProviderS
   void showMenuSelection(String value){
     if(value != language){
       language = value;
+      if(value == "all languages"){
+        language = "";
+      }
       getDataWithPage(0);
     }
 
@@ -112,7 +117,7 @@ class DiscoveryPageState extends State<DiscoveryPage> with SingleTickerProviderS
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Discovery"),
+        title: Text("Trending"),
         bottom: TabBar(
             tabs: tabs,
         controller: _tabController,
@@ -126,7 +131,7 @@ class DiscoveryPageState extends State<DiscoveryPage> with SingleTickerProviderS
             },
                 onSelected:showMenuSelection,
                 child: new Center(
-                    child: new Text(language.length == 0?"全部":language, style:TextStyle(color: Colors.white))
+                    child: new Text(language.length == 0?"all":language, style:TextStyle(color: Colors.white))
                 )
             ),
           )
@@ -190,7 +195,11 @@ class DiscoveryPageState extends State<DiscoveryPage> with SingleTickerProviderS
   Widget _buildCardWith(Trending trending){
     return FlatButton(
         onPressed: (){
-
+          Navigator.push(context,
+              CupertinoPageRoute(builder:(context){
+                return RepoDetailPage(Api.reposUrl+"/${trending.author}/${trending.name}","${trending.author}/${trending.name}");
+              })
+          );
         },
         child: Card(
           child: Column(
@@ -207,7 +216,7 @@ class DiscoveryPageState extends State<DiscoveryPage> with SingleTickerProviderS
                 new Expanded(
                     child: Column(children: <Widget>[
                       Text(trending.name??"",style: TextStyle(fontSize: 15,color: Colors.black,fontWeight: FontWeight.bold),),
-                      Text(trending.language??"",),
+                      Text(trending.language??"",)
                     ],
                       crossAxisAlignment: CrossAxisAlignment.start,
                     )

@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget{
   }
 }
 class HomePageState extends State<HomePage>{
-  final appBarTitles = ["News","Discovery","Stars","Repositories","More"];
+  final appBarTitles = ["News","Trending","Stars","Repositories","More"];
   final tabTextStyleSelected = TextStyle(color: Colors.white);
   final tabTextStyleNormal = TextStyle(color:Colors.grey[50]);
   int _tabIndex = 0;
