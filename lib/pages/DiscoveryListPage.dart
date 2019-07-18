@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:cxhub_flutter/api/NetRequest.dart';
 import 'package:cxhub_flutter/api/Api.dart';
 import 'package:cxhub_flutter/models/trending.dart';
-import 'package:cxhub_flutter/models/builtBy.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'RepoDetailPage.dart';
 import 'package:flutter/cupertino.dart';

@@ -1,4 +1,5 @@
 export 'orgModel.dart' ; 
+export 'starModel.dart' ; 
 export 'actorModel.dart' ; 
 export 'EventModel.dart' ; 
 export 'plan.dart' ; 
