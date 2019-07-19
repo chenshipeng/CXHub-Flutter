@@ -13,6 +13,7 @@ import 'package:cxhub_flutter/models/login.dart';
 import 'package:cxhub_flutter/models/userModel.dart';
 class NetRequest{
   static Dio dio = Dio();
+  static TokenInterceptors _tokenInterceptors = new TokenInterceptors();
   static login(String userName,String password,BuildContext context) async {
     String type = userName + ":" + password;
     var bytes = utf8.encode(type);
@@ -28,18 +29,15 @@ class NetRequest{
       "client_secret": NetConfig.CLIENT_SECRET,
       "redirect_uri":Api.redirectUri
     };
-    dio.interceptors.add(new TokenInterceptors());
+    dio.interceptors.add(_tokenInterceptors);
     dio.interceptors.add(new LogsInterceptors());
     Response response;
     try{
       response = await dio.post(Api.authUrl,data: json.encode(requestParams));
       SharedPreferences preferences = await SharedPreferences.getInstance();
-      preferences.setInt(DataUtils.IS_LOGIN, 1);
+      await preferences.setInt(DataUtils.IS_LOGIN, 1);
       print("data is ${Login.fromJson(response.data).toString()}");
-      getLoginUserInfo(userName);
-      Navigator.pushReplacement(context,new MaterialPageRoute(builder: (context){
-        return new HomePage();
-      }));
+      getLoginUserInfo(userName,context);
     }on DioError catch(e){
       print(e);
     }
@@ -48,7 +46,7 @@ class NetRequest{
     }
   }
 
-  static getLoginUserInfo(String userName) async{
+  static getLoginUserInfo(String userName,BuildContext context) async{
     dio.interceptors.add(new TokenInterceptors());
     Response response;
     String url = Api.userInfoUrl;
@@ -57,7 +55,10 @@ class NetRequest{
       UserModel user = UserModel.fromJson(response.data);
       if(user.login != null){
         SharedPreferences preferences = await SharedPreferences.getInstance();
-        preferences.setString(DataUtils.USER_LOGIN, user.login);
+        await preferences.setString(DataUtils.USER_LOGIN, user.login);
+        Navigator.pushReplacement(context,new MaterialPageRoute(builder: (context){
+          return new HomePage();
+        }));
       }
 
       print("user data is ${user}");
@@ -71,7 +72,7 @@ class NetRequest{
   }
 
   static received_events(String userName,int page) async{
-    dio.interceptors.add(new TokenInterceptors());
+//    dio.interceptors.add(new TokenInterceptors());
     Response response;
     String url = Api.usersUrl + "/${userName}/received_events?page=${page}";
     print("url is ${url}");
@@ -87,7 +88,7 @@ class NetRequest{
   }
 
   static repo_detail(String url) async{
-    dio.interceptors.add(new TokenInterceptors());
+//    dio.interceptors.add(new TokenInterceptors());
     Response response;
     try{
       response = await dio.get(url);
@@ -102,7 +103,7 @@ class NetRequest{
   }
   //检查是否star了仓库
   static checkIfStarredRepo(String repoLogin,String repoName,callBack) async{
-    dio.interceptors.add(new TokenInterceptors());
+//    dio.interceptors.add(new TokenInterceptors());
     Response response;
     String url = Api.checkIfStarredRepoUrl + "/${repoLogin}/${repoName}";
     print("url is ${url}");
@@ -125,7 +126,7 @@ class NetRequest{
     }
   }
   static starTheRepo(String repoLogin,String repoName,bool starred,callBack) async{
-    dio.interceptors.add(new TokenInterceptors());
+//    dio.interceptors.add(new TokenInterceptors());
     Response response;
     String url = Api.starTheRepoUrl + "/${repoLogin}/${repoName}";
     print("url is ${url}");
@@ -145,7 +146,7 @@ class NetRequest{
     }
   }
   static getUserListWith(String url,int page) async{
-    dio.interceptors.add(new TokenInterceptors());
+//    dio.interceptors.add(new TokenInterceptors());
     Response response;
     print("url is ${url}");
     try{
@@ -158,7 +159,7 @@ class NetRequest{
     }
   }
   static getUserInfo(String login) async{
-    dio.interceptors.add(new TokenInterceptors());
+//    dio.interceptors.add(new TokenInterceptors());
     Response response;
     String url = Api.usersUrl + "/${login}";
     try{
@@ -171,7 +172,7 @@ class NetRequest{
     }
   }
   static checkIfFollowing(String login,callBack) async{
-    dio.interceptors.add(new TokenInterceptors());
+//    dio.interceptors.add(new TokenInterceptors());
     SharedPreferences preferences = await SharedPreferences.getInstance();
     String selfLogin =  preferences.getString(DataUtils.USER_LOGIN);
     Response response;
