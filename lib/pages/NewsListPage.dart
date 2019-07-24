@@ -28,19 +28,18 @@ class _NewsListPageState extends State<NewsListPage>{
     var res = await NetRequest.received_events(_userName, page);
     print("res is ${res}");
 
-    if(res != null){
-      _refreshController.refreshCompleted();
+    _refreshController.refreshCompleted();
+
+    if(res != null && res.length > 0){
       var data = res;
-      if(data != null && data.length > 0){
-        setState(() {
-          if(page == 1){
-            list = data.map<EventModel>((item) => EventModel.fromJson(item)).toList();
-          }else{
-            list.addAll(data.map<EventModel>((item) => EventModel.fromJson(item)).toList());
-          }
-          print("list length is ${list.length}");
-        });
-      }
+      setState(() {
+        if(page == 1){
+          list = data.map<EventModel>((item) => EventModel.fromJson(item)).toList();
+        }else{
+          list.addAll(data.map<EventModel>((item) => EventModel.fromJson(item)).toList());
+        }
+        print("list length is ${list.length}");
+      });
     }
   }
 

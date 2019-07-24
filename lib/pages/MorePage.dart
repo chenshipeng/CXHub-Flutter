@@ -18,9 +18,9 @@ class MorePageState extends State<MorePage>{
     SharedPreferences preferences = await SharedPreferences.getInstance();
     await preferences.clear();
     Navigator.of(context).pop();
-    Navigator.pushReplacement(context,new MaterialPageRoute(builder: (context){
-      return new LoginPage();
-    }));
+    Navigator.of(context).pushAndRemoveUntil(
+        new MaterialPageRoute(builder: (context) => new LoginPage()
+        ), (route) => route == null);
   }
   logout(BuildContext context){
     showCupertinoDialog(context: context, builder: (BuildContext context){

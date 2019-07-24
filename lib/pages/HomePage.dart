@@ -70,7 +70,7 @@ class HomePageState extends State<HomePage>{
   }
   @override
   Widget build(BuildContext context) {
-    _body = IndexedStack(children: pages,index: _tabIndex);
+    _body = pages[_tabIndex];
     return Scaffold(
       body: _body,
       bottomNavigationBar: CupertinoTabBar(items:<BottomNavigationBarItem>[

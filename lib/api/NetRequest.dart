@@ -12,7 +12,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cxhub_flutter/models/login.dart';
 import 'package:cxhub_flutter/models/userModel.dart';
 class NetRequest{
-  static Dio dio = Dio();
+  static Dio dio = new Dio(BaseOptions(responseType: ResponseType.json));
   static TokenInterceptors _tokenInterceptors = new TokenInterceptors();
   static login(String userName,String password,BuildContext context) async {
     String type = userName + ":" + password;
@@ -56,9 +56,13 @@ class NetRequest{
       if(user.login != null){
         SharedPreferences preferences = await SharedPreferences.getInstance();
         await preferences.setString(DataUtils.USER_LOGIN, user.login);
-        Navigator.pushReplacement(context,new MaterialPageRoute(builder: (context){
-          return new HomePage();
-        }));
+        if(response != null && response.data != null){
+          Navigator.of(context).pushAndRemoveUntil(
+              new MaterialPageRoute(builder: (context) => new HomePage()
+              ), (route) => route == null);
+//          return response.data;
+        }
+
       }
 
       print("user data is ${user}");
@@ -66,9 +70,7 @@ class NetRequest{
     }on DioError catch(e){
       print(e);
     }
-    if(response != null && response.data != null){
-      return response.data;
-    }
+
   }
 
   static received_events(String userName,int page) async{
@@ -83,6 +85,7 @@ class NetRequest{
       print(e);
     }
     if(response != null && response.data != null){
+      print("response is ${response.data.toString()}");
       return response.data;
     }
   }
