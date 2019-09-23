@@ -8,6 +8,7 @@ import 'package:cxhub_flutter/util/DataUtil.dart';
 import 'dart:convert';
 import 'package:cxhub_flutter/interceptors/log_interceptor.dart';
 import 'package:cxhub_flutter/pages/HomePage.dart';
+import 'package:flutter/material.dart' as prefix0;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cxhub_flutter/models/login.dart';
 import 'package:cxhub_flutter/models/userModel.dart';
@@ -52,35 +53,29 @@ class NetRequest{
     String url = Api.userInfoUrl;
     try{
       response = await dio.get(url);
-      UserModel user = UserModel.fromJson(response.data);
-      if(user.login != null){
-        SharedPreferences preferences = await SharedPreferences.getInstance();
-        await preferences.setString(DataUtils.USER_LOGIN, user.login);
-        if(response != null && response.data != null){
-          Navigator.of(context).pushAndRemoveUntil(
-              new MaterialPageRoute(builder: (context) => new HomePage()
-              ), (route) => route == null);
-//          return response.data;
-        }
-
-      }
-
-      print("user data is ${user}");
-
     }on DioError catch(e){
       print(e);
     }
+    UserModel user = UserModel.fromJson(response.data);
+    if(user.login != null){
+      SharedPreferences preferences = await SharedPreferences.getInstance();
+      await preferences.setString(DataUtils.USER_LOGIN, user.login);
+      if(response != null && response.data != null){
+        Navigator.pushReplacementNamed(context,HomePage.sName);
+//          return response.data;
+      }
 
+    }
   }
 
   static received_events(String userName,int page) async{
-//    dio.interceptors.add(new TokenInterceptors());
+    dio.interceptors.add(new TokenInterceptors());
     Response response;
     String url = Api.usersUrl + "/${userName}/received_events?page=${page}";
     print("url is ${url}");
     try{
       response = await dio.get(url);
-      print("received events data is ${response.data.toString()}");
+//      print("received events data is ${response.data.toString()}");
     }on DioError catch(e){
       print(e);
     }

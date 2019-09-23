@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chenshipeng/Github/CXHub-Flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
+            "outputFile": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
             "map": [
                 {
                     "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/3259077defa80a387fa570729a85bc4d/res/values-ca/values-ca.xml",

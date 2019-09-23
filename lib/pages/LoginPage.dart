@@ -4,6 +4,7 @@ import 'package:cxhub_flutter/util/DataUtil.dart';
 import 'package:cxhub_flutter/api/NetRequest.dart';
 import 'dart:async';
 class LoginPage extends StatefulWidget{
+  static final String sName = 'login';
   @override
   State<StatefulWidget> createState() {
     return LoginPageState();
@@ -54,7 +55,8 @@ class LoginPageState extends State<LoginPage>{
                     new Padding(padding: new EdgeInsets.all(10.0)),
                     new TextField(
                       decoration:InputDecoration(
-                          hintText: "用户名",
+                          labelText: "username",
+                          labelStyle: TextStyle(color: Colors.grey),
                           icon: Icon(Icons.person,color: Colors.black)
                       ),
                       controller: userController,
@@ -65,7 +67,8 @@ class LoginPageState extends State<LoginPage>{
                     new Padding(padding: new EdgeInsets.all(10.0)),
                     new TextField(
                       decoration: InputDecoration(
-                          hintText: "密码",
+                          labelText: "password",
+                          labelStyle: TextStyle(color: Colors.grey),
                           icon: Icon(Icons.lock,color: Colors.black)
                       ),
                       controller: pwdController,
@@ -92,7 +95,7 @@ class LoginPageState extends State<LoginPage>{
                         },
                         child: new Flex(direction: Axis.horizontal,
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[Text("登录",style: TextStyle(fontSize: 17.0),)],)),
+                          children: <Widget>[Text("Login",style: TextStyle(fontSize: 17.0),)],)),
                     new Padding(padding: new EdgeInsets.all(30.0))
 
                   ],

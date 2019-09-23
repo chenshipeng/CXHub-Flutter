@@ -9,6 +9,7 @@ import 'package:cxhub_flutter/pages/LoginPage.dart';
 import 'package:cxhub_flutter/local/local_storage.dart';
 import 'package:cxhub_flutter/util/DataUtil.dart';
 class HomePage extends StatefulWidget{
+  static final String sName = 'home';
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
@@ -18,7 +19,7 @@ class HomePage extends StatefulWidget{
 class HomePageState extends State<HomePage>{
   final appBarTitles = ["News","Trending","Stars","Repositories","More"];
   final tabTextStyleSelected = TextStyle(color: Colors.white);
-  final tabTextStyleNormal = TextStyle(color:Colors.grey[50]);
+  final tabTextStyleNormal = TextStyle(color:Colors.grey[600]);
   int _tabIndex = 0;
   var tabImages;
   var _body;

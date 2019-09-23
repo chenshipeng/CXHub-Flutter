@@ -1,4 +1,4 @@
-#Mon Jun 10 15:56:12 CST 2019
-base.0=/Users/chenshipeng/Github/CXHub-Flutter/build/app/intermediates/transforms/dexMerger/debug/0
+#Mon Sep 23 11:01:55 CST 2019
+base.0=/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

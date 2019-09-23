@@ -26,8 +26,6 @@ class _NewsListPageState extends State<NewsListPage>{
     _userName =   await LocalStorage.get(DataUtils.USER_LOGIN);
     print("user name is ${_userName}");
     var res = await NetRequest.received_events(_userName, page);
-    print("res is ${res}");
-
     _refreshController.refreshCompleted();
 
     if(res != null && res.length > 0){
@@ -97,7 +95,7 @@ class _NewsListPageState extends State<NewsListPage>{
       child:new FlatButton(onPressed: (){
         print("click ${index},url is ${model.repo.url},name is ${model.repo.name}");
         Navigator.push(context,
-            CupertinoPageRoute(builder:(context){
+            MaterialPageRoute(builder:(context){
               return RepoDetailPage(model.repo.url,model.repo.name ?? "");
             })
         );
@@ -130,7 +128,8 @@ class _NewsListPageState extends State<NewsListPage>{
                 child:new ClipOval(child: Image.network(
                     model.actor.avatar_url,
                     width: 30.0,
-                    height: 30.0)),),
+                    height: 30.0)),
+            ),
             new Expanded(
                 child: new Text(
                     model.actor.login ?? "",

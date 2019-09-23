@@ -51,7 +51,15 @@ class MyCXHubState extends State<MyCXHubApp>{
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(primaryColor: Colors.black,hintColor: Colors.black),
-      home: isLogin > 0 ? HomePage():LoginPage()
+      home: isLogin > 0 ? HomePage():LoginPage(),
+      routes: {
+        HomePage.sName:(context){
+          return HomePage();
+        },
+        LoginPage.sName:(context){
+          return LoginPage();
+        },
+      },
     );
 
   }
