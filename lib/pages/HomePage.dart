@@ -22,7 +22,6 @@ class HomePageState extends State<HomePage>{
   final tabTextStyleNormal = TextStyle(color:Colors.grey[600]);
   int _tabIndex = 0;
   var tabImages;
-  var _body;
   var pages;
 
   Image getTabImage(path){
@@ -71,9 +70,21 @@ class HomePageState extends State<HomePage>{
   }
   @override
   Widget build(BuildContext context) {
-    _body = pages[_tabIndex];
+    var _pageController = PageController();
+    int _selectedIndex = 0;
     return Scaffold(
-      body: _body,
+      body: PageView.builder(
+        itemBuilder: (ctx, index) => pages[index],
+        itemCount: pages.length,
+        controller: _pageController,
+        physics: NeverScrollableScrollPhysics(),
+        onPageChanged: (index) {
+          setState(() {
+            _selectedIndex = index;
+            _tabIndex = index;
+          });
+        },
+      ),
       bottomNavigationBar: CupertinoTabBar(items:<BottomNavigationBarItem>[
         BottomNavigationBarItem(
             icon: getTabIcon(0),
@@ -96,10 +107,10 @@ class HomePageState extends State<HomePage>{
             title: getTabTitle(4),
         ),
       ] ,
-        currentIndex: _tabIndex,
+        currentIndex: _selectedIndex,
         onTap: (index){
           setState(() {
-            _tabIndex = index;
+            _pageController.jumpToPage(index);
           });
         },
         backgroundColor: Theme.of(context).primaryColor,

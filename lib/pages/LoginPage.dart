@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:cxhub_flutter/local/local_storage.dart';
 import 'package:cxhub_flutter/util/DataUtil.dart';
 import 'package:cxhub_flutter/api/NetRequest.dart';
+import 'package:flutter/material.dart' as prefix0;
 import 'dart:async';
+import 'HomePage.dart';
 class LoginPage extends StatefulWidget{
   static final String sName = 'login';
   @override
@@ -91,7 +93,6 @@ class LoginPageState extends State<LoginPage>{
                             return;
                           }
                           NetRequest.login(_userName.toString(), _password.toString(),context);
-
                         },
                         child: new Flex(direction: Axis.horizontal,
                           mainAxisAlignment: MainAxisAlignment.center,

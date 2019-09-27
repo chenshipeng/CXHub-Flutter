@@ -11,13 +11,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 class NewsListPage extends StatefulWidget{
 
+  NewsListPage([Key key]):super(key:key);
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
     return _NewsListPageState();
   }
 }
-class _NewsListPageState extends State<NewsListPage>{
+class _NewsListPageState extends State<NewsListPage> with AutomaticKeepAliveClientMixin{
+  @override
+  bool get wantKeepAlive => true;
   String _userName = '';
   List<EventModel>list;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
@@ -58,6 +61,7 @@ class _NewsListPageState extends State<NewsListPage>{
   }
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     if(list == null){
       return Scaffold(appBar: AppBar(title: Text("News"),centerTitle: true,),
       body: Center(child:

@@ -4,12 +4,15 @@ import 'package:flutter/cupertino.dart';
 import 'LoginPage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 class MorePage extends StatefulWidget{
+  MorePage([Key key]):super(key:key);
   @override
   State<StatefulWidget> createState() {
     return MorePageState();
   }
 }
-class MorePageState extends State<MorePage>{
+class MorePageState extends State<MorePage> with AutomaticKeepAliveClientMixin{
+  @override
+  bool get wantKeepAlive => true;
   @override
   void initState() {
     super.initState();
@@ -45,6 +48,7 @@ class MorePageState extends State<MorePage>{
   }
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Scaffold(appBar: AppBar(title: Text("More"),centerTitle: true,actions: <Widget>[
       FlatButton(onPressed: (){logout(context);}, child: Text("Logout",style: TextStyle(color: Colors.white,fontSize: 15),))
     ],),

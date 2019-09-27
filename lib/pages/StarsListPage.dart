@@ -9,13 +9,16 @@ import 'package:cxhub_flutter/local/local_storage.dart';
 import 'package:cxhub_flutter/util/DataUtil.dart';
 import 'package:cxhub_flutter/models/starModel.dart';
 class StarsPage extends StatefulWidget{
+  StarsPage([Key key]):super(key:key);
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
     return StarsPageState();
   }
 }
-class StarsPageState extends State<StarsPage>{
+class StarsPageState extends State<StarsPage> with AutomaticKeepAliveClientMixin{
+  @override
+  bool get wantKeepAlive => true;
   int page = 1;
   List<StarModel>repos;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
@@ -54,6 +57,7 @@ class StarsPageState extends State<StarsPage>{
   }
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     if(repos == null){
       return Scaffold(appBar: AppBar(title: Text("Stars"),centerTitle: true,),
         body: Center(child:

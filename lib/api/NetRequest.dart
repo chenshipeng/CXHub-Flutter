@@ -15,7 +15,7 @@ import 'package:cxhub_flutter/models/userModel.dart';
 class NetRequest{
   static Dio dio = new Dio(BaseOptions(responseType: ResponseType.json));
   static TokenInterceptors _tokenInterceptors = new TokenInterceptors();
-  static login(String userName,String password,BuildContext context) async {
+  static Future login(String userName,String password,BuildContext context) async {
     String type = userName + ":" + password;
     var bytes = utf8.encode(type);
     var base64Str = base64.encode(bytes);
@@ -35,14 +35,15 @@ class NetRequest{
     Response response;
     try{
       response = await dio.post(Api.authUrl,data: json.encode(requestParams));
-      SharedPreferences preferences = await SharedPreferences.getInstance();
-      await preferences.setInt(DataUtils.IS_LOGIN, 1);
-      print("data is ${Login.fromJson(response.data).toString()}");
-      getLoginUserInfo(userName,context);
     }on DioError catch(e){
       print(e);
+      return null;
     }
     if(response != null && response.data != null){
+      SharedPreferences preferences = await SharedPreferences.getInstance();
+      await preferences.setInt(DataUtils.IS_LOGIN, 1);
+//      print("data is ${Login.fromJson(response.data).toString()}");
+      getLoginUserInfo(userName,context);
       return response.data;
     }
   }
@@ -55,21 +56,22 @@ class NetRequest{
       response = await dio.get(url);
     }on DioError catch(e){
       print(e);
+      return null;
     }
-    UserModel user = UserModel.fromJson(response.data);
-    if(user.login != null){
-      SharedPreferences preferences = await SharedPreferences.getInstance();
-      await preferences.setString(DataUtils.USER_LOGIN, user.login);
-      if(response != null && response.data != null){
+    if(response != null && response.data != null){
+      print("user info is ${response.data}");
+      UserModel user = UserModel.fromJson(response.data);
+      if(user.login != null){
+        SharedPreferences preferences = await SharedPreferences.getInstance();
+        await preferences.setString(DataUtils.USER_LOGIN, user.login);
         Navigator.pushReplacementNamed(context,HomePage.sName);
-//          return response.data;
       }
-
     }
+
   }
 
   static received_events(String userName,int page) async{
-    dio.interceptors.add(new TokenInterceptors());
+//    dio.interceptors.add(new TokenInterceptors());
     Response response;
     String url = Api.usersUrl + "/${userName}/received_events?page=${page}";
     print("url is ${url}");
@@ -156,7 +158,7 @@ class NetRequest{
       return response.data;
     }
   }
-  static getUserInfo(String login) async{
+  static Future getUserInfo(String login) async{
 //    dio.interceptors.add(new TokenInterceptors());
     Response response;
     String url = Api.usersUrl + "/${login}";
@@ -164,6 +166,7 @@ class NetRequest{
       response = await dio.get(url);
     }on DioError catch(e){
       print(e);
+      return null;
     }
     if(response != null && response.data != null){
       return response.data;

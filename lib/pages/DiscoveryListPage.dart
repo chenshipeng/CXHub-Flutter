@@ -6,13 +6,15 @@ import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'RepoDetailPage.dart';
 import 'package:flutter/cupertino.dart';
 class DiscoveryPage extends StatefulWidget{
-
+  DiscoveryPage([Key key]):super(key:key);
   @override
   State<StatefulWidget> createState() {
     return DiscoveryPageState();
   }
 }
-class DiscoveryPageState extends State<DiscoveryPage> with SingleTickerProviderStateMixin{
+class DiscoveryPageState extends State<DiscoveryPage> with SingleTickerProviderStateMixin,AutomaticKeepAliveClientMixin{
+  @override
+  bool get wantKeepAlive => true;
   List <Tab>tabs = <Tab>[Tab(text: "Daily",),Tab(text: "Weekly",),Tab(text: "Monthly",)];
   TabController _tabController;
   int currentIndex = 0;
@@ -114,6 +116,7 @@ class DiscoveryPageState extends State<DiscoveryPage> with SingleTickerProviderS
   }
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Scaffold(
       appBar: AppBar(
         title: Text("Trending"),
