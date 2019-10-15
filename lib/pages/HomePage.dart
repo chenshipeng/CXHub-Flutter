@@ -85,7 +85,7 @@ class HomePageState extends State<HomePage>{
           });
         },
       ),
-      bottomNavigationBar: CupertinoTabBar(items:<BottomNavigationBarItem>[
+      bottomNavigationBar: BottomNavigationBar(items:<BottomNavigationBarItem>[
         BottomNavigationBarItem(
             icon: getTabIcon(0),
             title: getTabTitle(0),
@@ -109,10 +109,10 @@ class HomePageState extends State<HomePage>{
       ] ,
         currentIndex: _selectedIndex,
         onTap: (index){
-          setState(() {
-            _pageController.jumpToPage(index);
-          });
+          _pageController.jumpToPage(index);
+          _tabIndex = index;
         },
+        type: BottomNavigationBarType.fixed,
         backgroundColor: Theme.of(context).primaryColor,
       ),
     );

@@ -26,7 +26,20 @@ class MorePageState extends State<MorePage> with AutomaticKeepAliveClientMixin{
         ), (route) => route == null);
   }
   logout(BuildContext context){
-    showCupertinoDialog(context: context, builder: (BuildContext context){
+    showDialog(context: context, builder: (BuildContext context){
+      return new AlertDialog(
+        content: Text("Sure To Logout?"),
+      actions: <Widget>[
+        new RaisedButton(onPressed:(){
+          Navigator.of(context).pop();
+        },
+          child: Text("取消"),
+        ),
+        new RaisedButton(onPressed:(){
+          doLogout();
+        },child: Text("确定"),
+        ),
+        ]);
       return new CupertinoAlertDialog(content: Text("Sure To Logout?"),actions: <Widget>[
         new CupertinoDialogAction(
           child: new Text('取消'),
