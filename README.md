@@ -7,3 +7,4 @@
 
 
 > Swift版本地址 :https://github.com/chenshipeng/ManageYourStars
+> Swift版本下载地址：https://itunes.apple.com/us/app/cxhub-for-github/id1437613635?l=zh&ls=1&mt=8
