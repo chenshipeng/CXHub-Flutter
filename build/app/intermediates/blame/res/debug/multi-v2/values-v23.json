@@ -4,7 +4,7 @@
             "outputFile": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/3259077defa80a387fa570729a85bc4d/res/values-v23/values-v23.xml",
+                    "source": "/Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2c6c92180058c66e00493c649cc15d98/appcompat-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

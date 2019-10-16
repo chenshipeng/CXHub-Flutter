@@ -4,7 +4,7 @@
             "outputFile": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/3259077defa80a387fa570729a85bc4d/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2c6c92180058c66e00493c649cc15d98/appcompat-1.0.0/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

@@ -1,109 +1,127 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-33:12
-MERGED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-33:12
+ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-38:12
+MERGED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-38:12
 MERGED from [:shared_preferences] /Users/chenshipeng/Github/cxhub_flutter/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [:path_provider] /Users/chenshipeng/Github/cxhub_flutter/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_webview_plugin] /Users/chenshipeng/Github/cxhub_flutter/build/flutter_webview_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:path_provider] /Users/chenshipeng/Github/cxhub_flutter/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:webview_flutter] /Users/chenshipeng/Github/cxhub_flutter/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0-beta01.aar/144487f7dad80a7c8718d93ffa8b8d4f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/3259077defa80a387fa570729a85bc4d/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.webkit:webkit:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/webkit-1.0.0.aar/c349bc3be6aaa0e4a0e4c40dff199c14/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/767d26275e8d45548577fbac85da3b90/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/7d7551b3a6966502078043f3c3a9850d/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/59ee3aa15b42f574cf76db94ec50e77c/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/ab2a75dfe97534a750d709536ffe9c3f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/7a5137b07f1600149c83a34842142e7b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/6d59678f1ddf12d549986df33f37c5f0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/68f52e571fec4455fd59023d074ce6b2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/95d7b1dd3c36f82c50ec0ad6f38f91da/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/0ab8629397e8a3acce51210ae32c3970/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/07cab308fbe60523c53a72c899d67992/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/c60a2ccf5483541fd476fae366ec9fc6/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/26efe939f5617b46aa79c017384e193f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/342347616579f693fedb364c1e0b846a/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/5f82524768977975867d27a70a6e0d1a/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/9776bcca260e5ecae90d113f1650a3e8/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/49a37545fd1b85a7e0b5a84255b1588f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/42e63fcc806e188cdd3276e199554656/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/c78fd429a6481d6dad4eafd8c7fbf027/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/40b574199013baeb5de1311b255d3234/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/0e94ee5daf72dc2b1e38dc7aa690e073/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/52f29b2afa8dc3df14de8a8d8a59d43a/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/4e10ba5b9e4c17e0a98623ee1c88d4ad/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/94ff6940af0074e7cc863fc4d77f8ddb/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/93ab10322513b13467ecfd7aa3594f47/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/86c1d5c2afc61a453b6a18040317bda2/legacy-support-v4-1.0.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2c6c92180058c66e00493c649cc15d98/appcompat-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/25bfa9abbe57efa7109f3ed8175af34b/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.webkit:webkit:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/7d4c2426008f209b7054ad296856346c/webkit-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/91a2e0650e476867729e44e6c1acc534/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/67e3a22614326cadf216274f01d6d423/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/984e9edaa0792ad5f44429be517dd8ee/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/de3b4aff63e255359d6d83ac6fbdaff5/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/b108a0982f7e36037f9ac20119bb435a/media-1.0.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/e9a5a586c1d50b6fc9a947704548d1bc/vectordrawable-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/7ae8c1d65b7331eeb350edf91287a16c/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/cbfe81a657ef2afb513a6ca64388f844/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/3d66247cb3e229dc7753f5f4d3b35b4b/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/985ff358bb91108c25d3fd24361b35b6/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2dfde23a071269bfc073d57af77f7873/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/9b9140e118d7f4f83e504277c0661cb2/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/7b3b7b721ad53547c0e35001526b3ae3/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/4de34232979cbe134bd28b81339a3afe/core-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/9403b198b8afe4b102d07c4886ca21c9/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/e7284bace20bec096294b5474e153fbf/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/c073c929da6ad4e112abaac7d3212747/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/e72949b043b8df7a6068dab5e7cd21f2/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/072b344381f0227679ab9ff288809b6a/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/144fdb6eac090fb35b1d84279c68b489/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/fb37b7f790edcc9d7fe6d3e5314b8c56/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2d1f640c1b4beb33089ff5c91bbd7f31/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/8506ddbc1ed30380944ad7f0369e4760/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/35d6382087ac1999db47004e3bf24934/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/8893b90c6f2a61edd1acfa898cb4cde1/print-1.0.0/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:2:5-36
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:3:5-36
 		INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-38:12
 		INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:2:5-51
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:2:5-51
 	android:versionCode
 		INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:1-38:12
 		INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:1:11-69
 application
-ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:9:5-32:19
+ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:10:5-35:19
 MERGED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:flutter_webview_plugin] /Users/chenshipeng/Github/cxhub_flutter/build/flutter_webview_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-19:19
 MERGED from [:flutter_webview_plugin] /Users/chenshipeng/Github/cxhub_flutter/build/flutter_webview_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-19:19
-MERGED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/5f82524768977975867d27a70a6e0d1a/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/5f82524768977975867d27a70a6e0d1a/AndroidManifest.xml:22:5-23:19
-	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/AndroidManifest.xml:22:18-86
+MERGED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/4de34232979cbe134bd28b81339a3afe/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/4de34232979cbe134bd28b81339a3afe/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/144fdb6eac090fb35b1d84279c68b489/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/144fdb6eac090fb35b1d84279c68b489/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
 	android:label
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:11:9-38
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:12:9-30
+	android:appComponentFactory
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:15:9-82
+		REJECTED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/4de34232979cbe134bd28b81339a3afe/core-1.0.0/AndroidManifest.xml:22:18-86
 	android:icon
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:13:9-43
+	tools:replace
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:14:9-52
 	android:name
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:10:9-57
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:11:9-57
 activity#com.csp.cxhub_flutter.MainActivity
-ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:13:9-31:20
+ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:16:9-34:20
 	android:launchMode
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:15:13-43
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:18:13-43
 	android:hardwareAccelerated
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:18:13-47
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:21:13-47
 	android:windowSoftInputMode
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:19:13-55
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:22:13-55
 	android:configChanges
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:17:13-144
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:20:13-144
 	android:theme
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:16:13-47
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:19:13-47
 	android:name
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:14:13-41
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:17:13-41
 meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
-ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:24:13-26:40
+ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:27:13-29:40
 	android:value
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:26:17-37
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:29:17-37
 	android:name
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:25:17-82
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:28:17-82
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:27:13-30:29
+ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:30:13-33:29
 action#android.intent.action.MAIN
-ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:28:17-68
+ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:31:17-68
 	android:name
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:29:17-76
+ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:32:17-76
 	android:name
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:32:27-74
+uses-permission#android.permission.INTERNET
+ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:36:5-66
+MERGED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:36:5-66
+MERGED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:36:5-66
+	android:name
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:36:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:37:5-80
+MERGED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+MERGED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml:37:22-78
 uses-sdk
 INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml
@@ -112,70 +130,70 @@ MERGED from [:shared_preferences] /Users/chenshipeng/Github/cxhub_flutter/build/
 MERGED from [:shared_preferences] /Users/chenshipeng/Github/cxhub_flutter/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] /Users/chenshipeng/Github/cxhub_flutter/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] /Users/chenshipeng/Github/cxhub_flutter/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_webview_plugin] /Users/chenshipeng/Github/cxhub_flutter/build/flutter_webview_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-44
 MERGED from [:flutter_webview_plugin] /Users/chenshipeng/Github/cxhub_flutter/build/flutter_webview_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:6:5-44
+MERGED from [:path_provider] /Users/chenshipeng/Github/cxhub_flutter/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /Users/chenshipeng/Github/cxhub_flutter/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter] /Users/chenshipeng/Github/cxhub_flutter/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter] /Users/chenshipeng/Github/cxhub_flutter/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0-beta01.aar/144487f7dad80a7c8718d93ffa8b8d4f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0-beta01.aar/144487f7dad80a7c8718d93ffa8b8d4f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/3259077defa80a387fa570729a85bc4d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/3259077defa80a387fa570729a85bc4d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.webkit:webkit:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/webkit-1.0.0.aar/c349bc3be6aaa0e4a0e4c40dff199c14/AndroidManifest.xml:20:5-44
-MERGED from [androidx.webkit:webkit:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/webkit-1.0.0.aar/c349bc3be6aaa0e4a0e4c40dff199c14/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/767d26275e8d45548577fbac85da3b90/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/767d26275e8d45548577fbac85da3b90/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/7d7551b3a6966502078043f3c3a9850d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/7d7551b3a6966502078043f3c3a9850d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/59ee3aa15b42f574cf76db94ec50e77c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/59ee3aa15b42f574cf76db94ec50e77c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/ab2a75dfe97534a750d709536ffe9c3f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/ab2a75dfe97534a750d709536ffe9c3f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/7a5137b07f1600149c83a34842142e7b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/7a5137b07f1600149c83a34842142e7b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/6d59678f1ddf12d549986df33f37c5f0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/6d59678f1ddf12d549986df33f37c5f0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/68f52e571fec4455fd59023d074ce6b2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/68f52e571fec4455fd59023d074ce6b2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/95d7b1dd3c36f82c50ec0ad6f38f91da/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/95d7b1dd3c36f82c50ec0ad6f38f91da/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/0ab8629397e8a3acce51210ae32c3970/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/0ab8629397e8a3acce51210ae32c3970/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/07cab308fbe60523c53a72c899d67992/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/07cab308fbe60523c53a72c899d67992/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/c60a2ccf5483541fd476fae366ec9fc6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/c60a2ccf5483541fd476fae366ec9fc6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/26efe939f5617b46aa79c017384e193f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/26efe939f5617b46aa79c017384e193f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/342347616579f693fedb364c1e0b846a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/342347616579f693fedb364c1e0b846a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/5f82524768977975867d27a70a6e0d1a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/5f82524768977975867d27a70a6e0d1a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/9776bcca260e5ecae90d113f1650a3e8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/9776bcca260e5ecae90d113f1650a3e8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/49a37545fd1b85a7e0b5a84255b1588f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/49a37545fd1b85a7e0b5a84255b1588f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/42e63fcc806e188cdd3276e199554656/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/42e63fcc806e188cdd3276e199554656/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/c78fd429a6481d6dad4eafd8c7fbf027/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/c78fd429a6481d6dad4eafd8c7fbf027/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/40b574199013baeb5de1311b255d3234/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/40b574199013baeb5de1311b255d3234/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/0e94ee5daf72dc2b1e38dc7aa690e073/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/0e94ee5daf72dc2b1e38dc7aa690e073/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/52f29b2afa8dc3df14de8a8d8a59d43a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/52f29b2afa8dc3df14de8a8d8a59d43a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/4e10ba5b9e4c17e0a98623ee1c88d4ad/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/4e10ba5b9e4c17e0a98623ee1c88d4ad/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/94ff6940af0074e7cc863fc4d77f8ddb/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/94ff6940af0074e7cc863fc4d77f8ddb/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/93ab10322513b13467ecfd7aa3594f47/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/93ab10322513b13467ecfd7aa3594f47/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/86c1d5c2afc61a453b6a18040317bda2/legacy-support-v4-1.0.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/86c1d5c2afc61a453b6a18040317bda2/legacy-support-v4-1.0.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2c6c92180058c66e00493c649cc15d98/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2c6c92180058c66e00493c649cc15d98/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/25bfa9abbe57efa7109f3ed8175af34b/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/25bfa9abbe57efa7109f3ed8175af34b/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/7d4c2426008f209b7054ad296856346c/webkit-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/7d4c2426008f209b7054ad296856346c/webkit-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/91a2e0650e476867729e44e6c1acc534/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/91a2e0650e476867729e44e6c1acc534/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/67e3a22614326cadf216274f01d6d423/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/67e3a22614326cadf216274f01d6d423/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/984e9edaa0792ad5f44429be517dd8ee/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/984e9edaa0792ad5f44429be517dd8ee/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/de3b4aff63e255359d6d83ac6fbdaff5/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/de3b4aff63e255359d6d83ac6fbdaff5/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/b108a0982f7e36037f9ac20119bb435a/media-1.0.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0-beta01] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/b108a0982f7e36037f9ac20119bb435a/media-1.0.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/e9a5a586c1d50b6fc9a947704548d1bc/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/e9a5a586c1d50b6fc9a947704548d1bc/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/7ae8c1d65b7331eeb350edf91287a16c/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/7ae8c1d65b7331eeb350edf91287a16c/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/cbfe81a657ef2afb513a6ca64388f844/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/cbfe81a657ef2afb513a6ca64388f844/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/3d66247cb3e229dc7753f5f4d3b35b4b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/3d66247cb3e229dc7753f5f4d3b35b4b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/985ff358bb91108c25d3fd24361b35b6/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/985ff358bb91108c25d3fd24361b35b6/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2dfde23a071269bfc073d57af77f7873/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2dfde23a071269bfc073d57af77f7873/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/9b9140e118d7f4f83e504277c0661cb2/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/9b9140e118d7f4f83e504277c0661cb2/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/7b3b7b721ad53547c0e35001526b3ae3/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/7b3b7b721ad53547c0e35001526b3ae3/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/4de34232979cbe134bd28b81339a3afe/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/4de34232979cbe134bd28b81339a3afe/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/9403b198b8afe4b102d07c4886ca21c9/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/9403b198b8afe4b102d07c4886ca21c9/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/e7284bace20bec096294b5474e153fbf/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/e7284bace20bec096294b5474e153fbf/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/c073c929da6ad4e112abaac7d3212747/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/c073c929da6ad4e112abaac7d3212747/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/e72949b043b8df7a6068dab5e7cd21f2/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/e72949b043b8df7a6068dab5e7cd21f2/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/072b344381f0227679ab9ff288809b6a/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/072b344381f0227679ab9ff288809b6a/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/144fdb6eac090fb35b1d84279c68b489/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/144fdb6eac090fb35b1d84279c68b489/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/fb37b7f790edcc9d7fe6d3e5314b8c56/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/fb37b7f790edcc9d7fe6d3e5314b8c56/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2d1f640c1b4beb33089ff5c91bbd7f31/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2d1f640c1b4beb33089ff5c91bbd7f31/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/8506ddbc1ed30380944ad7f0369e4760/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/8506ddbc1ed30380944ad7f0369e4760/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/35d6382087ac1999db47004e3bf24934/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/35d6382087ac1999db47004e3bf24934/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/8893b90c6f2a61edd1acfa898cb4cde1/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/8893b90c6f2a61edd1acfa898cb4cde1/print-1.0.0/AndroidManifest.xml:20:5-44
 INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -184,18 +202,10 @@ INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/Andr
 	android:minSdkVersion
 		INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/AndroidManifest.xml:6:5-66
-	android:name
-		ADDED from /Users/chenshipeng/Github/cxhub_flutter/android/app/src/debug/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
 	android:name
 		ADDED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
-	android:name
-		ADDED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
 uses-permission#android.permission.CAMERA
 ADDED from [:image_picker] /Users/chenshipeng/Github/cxhub_flutter/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-65
 	android:name

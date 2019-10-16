@@ -4,7 +4,7 @@
             "outputFile": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/values-v16/values-v16.xml",
+                    "source": "/Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/4de34232979cbe134bd28b81339a3afe/core-1.0.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/3259077defa80a387fa570729a85bc4d/res/values-v16/values-v16.xml",
+                    "source": "/Users/chenshipeng/.gradle/caches/transforms-2/files-2.1/2c6c92180058c66e00493c649cc15d98/appcompat-1.0.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

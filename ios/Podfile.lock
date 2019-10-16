@@ -39,7 +39,7 @@ SPEC CHECKSUMS:
   image_picker: a211f28b95a560433c00f5cd3773f4710a20404d
   path_provider: f96fff6166a8867510d2c25fdcc346327cc4b259
   shared_preferences: 1feebfa37bb57264736e16865e7ffae7fc99b523
-  webview_flutter: 1aa7604e6cdb451a9b7ed2c37d5454c0b440246b
+  webview_flutter: db3aba222b23e4dc432e0c5882834123dc50ff9f
 
 PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
 

@@ -25,7 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_cache_manager: ^0.2.0+1
   palette_generator: ^0.1.0
-  flutter_webview_plugin: ^0.3.0+2
+  flutter_webview_plugin: ^0.3.8
   webview_flutter: ^0.3.9
   dio: ^2.1.16
   oktoast: ^2.2.0
