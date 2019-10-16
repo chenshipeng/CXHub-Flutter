@@ -7,6 +7,7 @@ import 'pages/HomePage.dart';
 import 'package:cxhub_flutter/event/LoginEvent.dart';
 import 'package:event_bus/event_bus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:oktoast/oktoast.dart';
 void main() => runApp(LoginTextApp());
 
 class LoginTextApp extends StatelessWidget{
@@ -49,18 +50,21 @@ class MyCXHubState extends State<MyCXHubApp>{
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(primaryColor: Colors.black,hintColor: Colors.black),
-      home: isLogin > 0 ? HomePage():LoginPage(),
-      routes: {
-        HomePage.sName:(context){
-          return HomePage();
+    return OKToast(
+      dismissOtherOnShow: true,
+      child: MaterialApp(
+        theme: ThemeData(primaryColor: Colors.black,hintColor: Colors.black),
+        home: isLogin > 0 ? HomePage():LoginPage(),
+        routes: {
+          HomePage.sName:(context){
+            return HomePage();
+          },
+          LoginPage.sName:(context){
+            return LoginPage();
+          },
         },
-        LoginPage.sName:(context){
-          return LoginPage();
-        },
-      },
-    );
+      ),
+    ); 
 
   }
 

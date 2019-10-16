@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cxhub_flutter/local/local_storage.dart';
 import 'package:cxhub_flutter/util/DataUtil.dart';
 import 'package:cxhub_flutter/api/NetRequest.dart';
+import 'package:oktoast/oktoast.dart';
 import 'package:flutter/material.dart' as prefix0;
 import 'dart:async';
 import 'HomePage.dart';
@@ -32,6 +33,19 @@ class LoginPageState extends State<LoginPage>{
     print("userName is ${_userName},password is ${_password}");
     userController.value = new TextEditingValue(text: _userName ?? "");
     pwdController.value = new TextEditingValue(text: _password ?? "");
+  }
+  void _showCustomWidgetToast() {
+    var w = Center(
+      child: Container(
+        padding: const EdgeInsets.all(5),
+        color: Colors.black.withOpacity(0.7),
+        child: CircularProgressIndicator(
+          backgroundColor: Colors.white,
+        ),
+      ),
+    );
+    showToastWidget(w,
+    duration: Duration(seconds: 10));
   }
   @override
   Widget build(BuildContext context) {
@@ -92,6 +106,7 @@ class LoginPageState extends State<LoginPage>{
                           if(_password == null || _password.length == 0){
                             return;
                           }
+//                          _showCustomWidgetToast();
                           NetRequest.login(_userName.toString(), _password.toString(),context);
                         },
                         child: new Flex(direction: Axis.horizontal,

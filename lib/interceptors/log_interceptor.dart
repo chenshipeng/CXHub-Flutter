@@ -13,7 +13,7 @@ class LogsInterceptors extends InterceptorsWrapper{
   @override
   onResponse(Response response) {
     if(response != null){
-      print("返回参数:${json.decode(response.toString())}");
+      print("返回参数:${response.toString()}");
     }
     return response;
   }

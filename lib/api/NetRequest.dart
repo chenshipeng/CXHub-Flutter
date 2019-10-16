@@ -1,3 +1,4 @@
+import 'package:cxhub_flutter/pages/NewsListPage.dart';
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 import 'package:cxhub_flutter/api/NetConfig.dart';
@@ -12,10 +13,13 @@ import 'package:flutter/material.dart' as prefix0;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cxhub_flutter/models/login.dart';
 import 'package:cxhub_flutter/models/userModel.dart';
+import 'package:oktoast/oktoast.dart';
 class NetRequest{
   static Dio dio = new Dio(BaseOptions(responseType: ResponseType.json));
   static TokenInterceptors _tokenInterceptors = new TokenInterceptors();
+
   static Future login(String userName,String password,BuildContext context) async {
+    print("Login");
     String type = userName + ":" + password;
     var bytes = utf8.encode(type);
     var base64Str = base64.encode(bytes);
@@ -30,8 +34,8 @@ class NetRequest{
       "client_secret": NetConfig.CLIENT_SECRET,
       "redirect_uri":Api.redirectUri
     };
-    dio.interceptors.add(_tokenInterceptors);
-    dio.interceptors.add(new LogsInterceptors());
+    dio.interceptors.add(new TokenInterceptors());
+//    dio.interceptors.add(new LogsInterceptors());
     Response response;
     try{
       response = await dio.post(Api.authUrl,data: json.encode(requestParams));
@@ -71,7 +75,7 @@ class NetRequest{
   }
 
   static received_events(String userName,int page) async{
-//    dio.interceptors.add(new TokenInterceptors());
+//    dio.interceptors.add(new LogsInterceptors());
     Response response;
     String url = Api.usersUrl + "/${userName}/received_events?page=${page}";
     print("url is ${url}");

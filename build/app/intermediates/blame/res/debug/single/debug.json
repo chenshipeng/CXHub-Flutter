@@ -65,7 +65,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/layout/notification_template_part_chronometer.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/color_abc_background_cache_hint_selector_material_dark.xml.flat",
@@ -93,11 +93,11 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_action_tombstone.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/layout/notification_action_tombstone.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/layout/notification_action_tombstone.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_action.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/layout/notification_action.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/layout/notification_action.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
@@ -125,7 +125,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/res/layout/notification_template_big_media_narrow.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/aa4e0e813cd8dc1dae7d892aacff5f71/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable_abc_item_background_holo_light.xml.flat",
@@ -141,7 +141,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/res/layout/notification_template_lines_media.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/aa4e0e813cd8dc1dae7d892aacff5f71/res/layout/notification_template_lines_media.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -205,7 +205,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -217,7 +217,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -241,7 +241,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/layout-v21/notification_template_icon_group.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/layout-v21/notification_template_icon_group.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -285,7 +285,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/res/layout/notification_template_media_custom.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/aa4e0e813cd8dc1dae7d892aacff5f71/res/layout/notification_template_media_custom.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/color-v23_abc_tint_spinner.xml.flat",
@@ -313,7 +313,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-mdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable_abc_ic_menu_overflow_material.xml.flat",
@@ -429,11 +429,11 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_template_icon_group.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/layout/notification_template_icon_group.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/layout/notification_template_icon_group.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -469,7 +469,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -477,11 +477,11 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/res/layout/notification_template_big_media.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/aa4e0e813cd8dc1dae7d892aacff5f71/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/layout-v21/notification_action.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/layout-v21/notification_action.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable_abc_text_cursor_material.xml.flat",
@@ -505,7 +505,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-hdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -525,7 +525,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/res/layout/notification_media_cancel_action.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/aa4e0e813cd8dc1dae7d892aacff5f71/res/layout/notification_media_cancel_action.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_select_dialog_multichoice_material.xml.flat",
@@ -553,7 +553,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -641,7 +641,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -697,7 +697,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -753,7 +753,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -773,7 +773,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_template_media.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/res/layout/notification_template_media.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/aa4e0e813cd8dc1dae7d892aacff5f71/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/color-v23_abc_tint_edittext.xml.flat",
@@ -789,7 +789,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable_notification_tile_bg.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable/notification_tile_bg.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable/notification_tile_bg.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -849,7 +849,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_template_big_media_custom.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/res/layout/notification_template_big_media_custom.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/aa4e0e813cd8dc1dae7d892aacff5f71/res/layout/notification_template_big_media_custom.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_abc_select_dialog_material.xml.flat",
@@ -909,7 +909,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable/notification_bg_low.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable/notification_bg_low.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_abc_screen_toolbar.xml.flat",
@@ -961,7 +961,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -985,7 +985,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/layout-v21/notification_template_custom_big.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/layout-v21/notification_template_custom_big.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -1021,11 +1021,11 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable/notification_bg.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -1057,7 +1057,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_media_action.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/res/layout/notification_media_action.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/aa4e0e813cd8dc1dae7d892aacff5f71/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/anim_abc_tooltip_exit.xml.flat",
@@ -1113,7 +1113,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/layout-v21/notification_action_tombstone.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/layout-v21/notification_action_tombstone.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_abc_popup_menu_header_item_layout.xml.flat",
@@ -1149,7 +1149,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/a570d15a3a2794d0c95d31572e552440/res/layout/notification_template_big_media_narrow_custom.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/aa4e0e813cd8dc1dae7d892aacff5f71/res/layout/notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/color_switch_thumb_material_light.xml.flat",
@@ -1205,7 +1205,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-v21/notification_action_background.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-v21/notification_action_background.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1289,7 +1289,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/color-v23_abc_btn_colored_borderless_text_material.xml.flat",
@@ -1429,15 +1429,15 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout-v16_notification_template_custom_big.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/layout-v16/notification_template_custom_big.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/layout-v16/notification_template_custom_big.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable/notification_icon_background.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable/notification_icon_background.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -1477,7 +1477,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/layout/notification_template_part_time.xml"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/layout/notification_template_part_time.xml"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -1485,7 +1485,7 @@
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/c0fd36d06dd1932bc45f71050d77d1f2/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+        "source": "/Users/chenshipeng/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bc2be384fae60dbc121e2da5d822b20e/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "/Users/chenshipeng/Github/cxhub_flutter/build/app/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
