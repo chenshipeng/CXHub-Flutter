@@ -40,6 +40,7 @@ class NetRequest{
     try{
       response = await dio.post(Api.authUrl,data: json.encode(requestParams));
     }on DioError catch(e){
+      dismissAllToast();
       print(e);
       return null;
     }
@@ -59,10 +60,12 @@ class NetRequest{
     try{
       response = await dio.get(url);
     }on DioError catch(e){
+      dismissAllToast();
       print(e);
       return null;
     }
     if(response != null && response.data != null){
+      dismissAllToast();
       print("user info is ${response.data}");
       UserModel user = UserModel.fromJson(response.data);
       if(user.login != null){

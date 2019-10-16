@@ -52,6 +52,9 @@ class MyCXHubState extends State<MyCXHubApp>{
   Widget build(BuildContext context) {
     return OKToast(
       dismissOtherOnShow: true,
+      radius: 8.0,
+      backgroundColor: Colors.grey.withAlpha(200),
+      textStyle: TextStyle(fontSize: 16.0,color: Colors.white),
       child: MaterialApp(
         theme: ThemeData(primaryColor: Colors.black,hintColor: Colors.black),
         home: isLogin > 0 ? HomePage():LoginPage(),

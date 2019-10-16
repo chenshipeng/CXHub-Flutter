@@ -3,6 +3,7 @@ import 'package:cxhub_flutter/local/local_storage.dart';
 import 'package:cxhub_flutter/util/DataUtil.dart';
 import 'package:cxhub_flutter/api/NetRequest.dart';
 import 'package:oktoast/oktoast.dart';
+import 'package:flutter_progress_hud/flutter_progress_hud.dart';
 import 'package:flutter/material.dart' as prefix0;
 import 'dart:async';
 import 'HomePage.dart';
@@ -38,9 +39,12 @@ class LoginPageState extends State<LoginPage>{
     var w = Center(
       child: Container(
         padding: const EdgeInsets.all(5),
-        color: Colors.black.withOpacity(0.7),
-        child: CircularProgressIndicator(
-          backgroundColor: Colors.white,
+        child: SizedBox(
+          height: 50,
+            width: 50,
+          child: CircularProgressIndicator(
+            backgroundColor: Colors.black,
+          ),
         ),
       ),
     );
@@ -106,7 +110,7 @@ class LoginPageState extends State<LoginPage>{
                           if(_password == null || _password.length == 0){
                             return;
                           }
-//                          _showCustomWidgetToast();
+                          _showCustomWidgetToast();
                           NetRequest.login(_userName.toString(), _password.toString(),context);
                         },
                         child: new Flex(direction: Axis.horizontal,

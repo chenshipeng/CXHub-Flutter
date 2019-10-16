@@ -195,6 +195,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.2.0+1"
+  flutter_progress_hud:
+    dependency: "direct main"
+    description:
+      name: flutter_progress_hud
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
