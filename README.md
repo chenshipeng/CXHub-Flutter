@@ -10,3 +10,5 @@
 
 
 > Swift版本下载地址：https://itunes.apple.com/us/app/cxhub-for-github/id1437613635?l=zh&ls=1&mt=8
+
+> akp:https://github.com/chenshipeng/CXHub-Flutter/blob/master/build/app/outputs/apk/app.apk
