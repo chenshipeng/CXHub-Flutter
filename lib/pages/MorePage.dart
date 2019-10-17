@@ -99,9 +99,10 @@ class MorePageState extends State<MorePage> with AutomaticKeepAliveClientMixin {
         ),
         body: Center(
             child: Padding(
-          padding: EdgeInsets.only(left: 20, right: 20),
+          padding: EdgeInsets.only(left: 5, right:5),
           child: Column(
             mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Row(
                 children: <Widget>[
@@ -124,24 +125,19 @@ class MorePageState extends State<MorePage> with AutomaticKeepAliveClientMixin {
                 ],
                 mainAxisAlignment: MainAxisAlignment.start,
               ),
-              Flex(
-                direction: Axis.horizontal,
-                children: <Widget>[
-                  Text("juejin："),
-                  Expanded(
-                      child: Text.rich(TextSpan(children: [
-
-                    TextSpan(
-                        text:
-                            "https://juejin.im/user/594a1ed161ff4b006c10e807/posts",
-                        recognizer: tap,
-                        style: TextStyle(
-                            color: Colors.red,
-                            decoration: TextDecoration.underline,
-                            fontWeight: FontWeight.bold)),
-                  ]),textScaleFactor: 0.8,)),
-                ],
-              )
+              Row(children: <Widget>[
+                Expanded(
+                    child: Text.rich(TextSpan(text: "juejin：",children: [
+                      TextSpan(
+                          text:
+                          "https://juejin.im/user/594a1ed161ff4b006c10e807/posts",
+                          recognizer: tap,
+                          style: TextStyle(
+                              color: Colors.red,
+                              decoration: TextDecoration.underline,
+                              fontWeight: FontWeight.bold)),
+                    ]),))
+              ],)
             ],
           ),
         )));
