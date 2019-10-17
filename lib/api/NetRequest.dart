@@ -18,6 +18,23 @@ class NetRequest{
   static Dio dio = new Dio(BaseOptions(responseType: ResponseType.json));
   static TokenInterceptors _tokenInterceptors = new TokenInterceptors();
 
+  void _showCustomWidgetToast() {
+    var w = Center(
+      child: Container(
+        padding: const EdgeInsets.all(5),
+        child: SizedBox(
+          height: 50,
+          width: 50,
+          child: CircularProgressIndicator(
+            valueColor: AlwaysStoppedAnimation<Color>(Colors.black)
+          ),
+        ),
+      ),
+    );
+    showToastWidget(w,
+        duration: Duration(seconds: 10));
+  }
+
   static Future login(String userName,String password,BuildContext context) async {
     print("Login");
     String type = userName + ":" + password;
@@ -35,19 +52,19 @@ class NetRequest{
       "redirect_uri":Api.redirectUri
     };
     dio.interceptors.add(new TokenInterceptors());
-//    dio.interceptors.add(new LogsInterceptors());
+    dio.interceptors.add(new LogsInterceptors());
     Response response;
     try{
       response = await dio.post(Api.authUrl,data: json.encode(requestParams));
     }on DioError catch(e){
       dismissAllToast();
       print(e);
+      showToast("Login failed");
       return null;
     }
     if(response != null && response.data != null){
       SharedPreferences preferences = await SharedPreferences.getInstance();
       await preferences.setInt(DataUtils.IS_LOGIN, 1);
-//      print("data is ${Login.fromJson(response.data).toString()}");
       getLoginUserInfo(userName,context);
       return response.data;
     }
@@ -87,6 +104,7 @@ class NetRequest{
 //      print("received events data is ${response.data.toString()}");
     }on DioError catch(e){
       print(e);
+      return null;
     }
     if(response != null && response.data != null){
       print("response is ${response.data.toString()}");
@@ -102,6 +120,7 @@ class NetRequest{
       print("received events data is ${response.data.toString()}");
     }on DioError catch(e){
       print(e);
+      return null;
     }
     if(response != null && response.data != null){
       return response.data;
@@ -125,7 +144,7 @@ class NetRequest{
       }
       print("statuscode is ${response.statusCode}");
     }on DioError catch(e){
-
+      return null;
       print("statusCode1 is ${e.response.statusCode},status message is ${e.response.statusMessage}");
     }
     if(response != null && response.data != null){
@@ -146,6 +165,7 @@ class NetRequest{
       print("statusCode  is ${response.statusCode},statusMessage is ${response.statusMessage}");
       callBack(response.statusCode);
     }on DioError catch(e){
+      return null;
       print("statusCode is ${e.response.statusCode}");
     }
     if(response != null && response.data != null){
@@ -160,6 +180,7 @@ class NetRequest{
       response = await dio.get(url+"?page=${page}");
     }on DioError catch(e){
 //      print("statusCode is ${e.response.statusCode},status message is ${e.response.statusMessage}");
+      return null;
     }
     if(response != null && response.data != null){
       return response.data;
@@ -195,6 +216,7 @@ class NetRequest{
       }
     }on DioError catch(e){
       print(e);
+      return null;
     }
     if(response != null && response.data != null){
       return response.data;
@@ -216,6 +238,7 @@ class NetRequest{
       print("url is ${finalUrl}");
     }on DioError catch(e){
       print("${finalUrl} erros is ${e}");
+      return null;
     }
     if(response != null && response.data != null){
       return response.data;

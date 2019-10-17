@@ -43,7 +43,7 @@ class LoginPageState extends State<LoginPage>{
           height: 50,
             width: 50,
           child: CircularProgressIndicator(
-            backgroundColor: Colors.black,
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.black)
           ),
         ),
       ),
