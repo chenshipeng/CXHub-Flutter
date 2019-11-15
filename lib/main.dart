@@ -58,6 +58,7 @@ class MyCXHubState extends State<MyCXHubApp>{
       child: MaterialApp(
         theme: ThemeData(primaryColor: Colors.black,hintColor: Colors.black),
         home: isLogin > 0 ? HomePage():LoginPage(),
+        debugShowCheckedModeBanner: false,
         routes: {
           HomePage.sName:(context){
             return HomePage();
@@ -67,7 +68,7 @@ class MyCXHubState extends State<MyCXHubApp>{
           },
         },
       ),
-    ); 
+    );
 
   }
 

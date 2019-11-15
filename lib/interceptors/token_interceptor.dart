@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:cxhub_flutter/local/local_storage.dart';
 import 'package:cxhub_flutter/util/DataUtil.dart';
+import 'package:oktoast/oktoast.dart';
 
 class TokenInterceptors extends InterceptorsWrapper{
   String _token;
@@ -11,7 +12,7 @@ class TokenInterceptors extends InterceptorsWrapper{
       if(authorizationCode != null){
         _token = authorizationCode;
       }
-      print(_token);
+      print("token is ${_token}");
       options.headers["Authorization"] = _token;
     }
     return super.onRequest(options);
@@ -22,6 +23,7 @@ class TokenInterceptors extends InterceptorsWrapper{
       var responseJson = response.data;
       if(response.statusCode == 201 && responseJson["token"] != null){
         _token = 'token' + responseJson["token"];
+        print("get token is ${_token}");
         await LocalStorage.save(DataUtils.HEADER_TOKEN, _token);
       }
     } catch(e){
@@ -39,6 +41,7 @@ class TokenInterceptors extends InterceptorsWrapper{
       String basic = await LocalStorage.get(DataUtils.USER_BASIC_CODE);
       if(basic == null){
         //提示请输入账号密码
+        showToast("Please input account and password");
       }else{
         return "Basic $basic";
       }
